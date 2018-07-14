@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<eventSheets layout="StartScene" previous="" next="" version="2.2">
+  <item type="instance" UID="160"/>
+  <item type="instance" UID="74"/>
+  <item type="instance" UID="155"/>
+  <item type="instance" UID="153"/>
+  <item type="instance" UID="154"/>
+  <item type="instance" UID="152"/>
+  <item type="instance" UID="156"/>
+  <item type="instance" UID="157"/>
+  <item type="instance" UID="68">
+    <item type="behavior" behaviorType="FadeBehavior" name="淡入淡出">
+      <item valueDataType="number" value="1" name="activeAtStartType"/>
+      <item valueDataType="number" value="2" name="fadeInTime"/>
+      <item valueDataType="number" value="2" name="waitTime"/>
+      <item valueDataType="number" value="2" name="fadeOutTime"/>
+      <item valueDataType="number" value="10" name="loopTimes"/>
+      <item valueDataType="number" value="1" name="destoryType"/>
+    </item>
+  </item>
+  <item type="instance" UID="65"/>
+  <item type="variable" variableName="wallWidth" variableType="number" initValue="200"/>
+  <item type="variable" variableName="gameTask" variableType="number" initValue="0"/>
+  <item type="variable" variableName="gameModel" variableType="number" initValue="1"/>
+  <item type="event" conditionRelationShip="true" triggerOnceWhileTrue="false">
+    <item type="condition" callTarget="instance" paramsClass="OnButtonBeginEvent" callName="onButtonBegin" isTrigger="true" target="AITextField73"/>
+    <item type="condition" callTarget="instance" paramsClass="OnButtonBeginEvent" callName="onButtonBegin" isTrigger="true" target="AITextField159" operatorType="1"/>
+    <item type="action" persistent="false" callTarget="instance" callName="gotoScene" target="System">
+      <item valueDataType="string" value="%22MainScene%22" name="18"/>
+    </item>
+  </item>
+  <item type="event" conditionRelationShip="true" triggerOnceWhileTrue="false">
+    <item type="condition" callTarget="instance" paramsClass="EveryXSecondsEvent" callName="everyXSecondEvent" isTrigger="false" target="System">
+      <item valueDataType="number" value="60" name="interval"/>
+    </item>
+    <item type="action" persistent="false" callTarget="instance" callName="createObject" target="System">
+      <item valueDataType="string" value="AISprite67" name="23" isFamily="false"/>
+      <item valueDataType="number" value="0" name="22"/>
+      <item valueDataType="number" value="0" name="21"/>
+      <item valueDataType="number" value="0" name="20"/>
+    </item>
+  </item>
+  <item type="event" conditionRelationShip="true" triggerOnceWhileTrue="false">
+    <item type="condition" callTarget="instance" paramsClass="OnSceneInitCompleteEvent" callName="onSceneInitComplete" isTrigger="true" target="System"/>
+    <item type="event" conditionRelationShip="true" triggerOnceWhileTrue="false">
+      <item type="condition" callTarget="instance" paramsClass="CompareVariableEvent" callName="compareVariable" isTrigger="false" target="System">
+        <item valueDataType="string" value="gameTask" name="variable" variable="true"/>
+        <item valueDataType="string" value="%22greaterThan%22" name="operationType"/>
+        <item valueDataType="any" value="2" name="value"/>
+      </item>
+      <item type="action" persistent="false" callTarget="instance" callName="setValue" target="System">
+        <item valueDataType="string" value="gameTask" name="10" variable="true"/>
+        <item valueDataType="any" value="2" name="9"/>
+      </item>
+    </item>
+  </item>
+</eventSheets>

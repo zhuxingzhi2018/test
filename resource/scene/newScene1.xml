@@ -1,0 +1,658 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout id="null" sceneSize="3200,2400" next="newScene2" previous="MainScene" eventSheet="newScene1EventSheet" version="2.2">
+  <layer index="0" parallaxX="100" parallaxY="100" layerAlpha="1" layerVisible="true" cacheAsBitmap="false" bgColor="" bgColorAlpha="" layerScaleX="100" layerScaleY="100"/>
+  <layer index="1" parallaxX="100" parallaxY="100" layerAlpha="1" layerVisible="true" cacheAsBitmap="false" bgColor="" bgColorAlpha="" layerScaleX="100" layerScaleY="100"/>
+  <layer index="2" parallaxX="100" parallaxY="100" layerAlpha="1" layerVisible="true" cacheAsBitmap="false" bgColor="" bgColorAlpha="" layerScaleX="100" layerScaleY="100"/>
+  <layer index="3" parallaxX="0" parallaxY="0" layerAlpha="1" layerVisible="true" cacheAsBitmap="false" bgColor="" bgColorAlpha="" layerScaleX="100" layerScaleY="100"/>
+  <item UID="91" plugin="AISprite" name="bgMasger" cacheAsBitmap="false" parallaxX="100" parallaxY="100" index="0" family="displayobject">
+    <item name="name" value="bgMasger" valueDataType="string"/>
+    <item name="uiGuid" value="91" valueDataType="string"/>
+    <item name="global" value="false" valueDataType="boolean"/>
+    <item name="visible" value="true" valueDataType="boolean"/>
+    <item name="x" value="1600" valueDataType="number"/>
+    <item name="y" value="1200" valueDataType="number"/>
+    <item name="anchorX" value="0.5" valueDataType="number"/>
+    <item name="anchorY" value="0.5" valueDataType="number"/>
+    <item name="width" value="3200" valueDataType="number"/>
+    <item name="height" value="2400" valueDataType="number"/>
+    <item name="angle" value="0" valueDataType="number"/>
+    <item name="alpha" value="1" valueDataType="number"/>
+    <item name="url" value="resource%2FuserAsset%2FCube0.png" valueDataType="string"/>
+    <item name="enabled" value="false" valueDataType="boolean"/>
+    <item name="collision" value="false" valueDataType="boolean"/>
+    <item name="collisionData" value="0%2Fn0.00%7C2400.00%2C3200.00%7C2400.00%2C3200.00%7C0.00%2C0.00%7C0.00" sourceValue="0%2Fn0.00%7C2400.00%2C3200.00%7C2400.00%2C3200.00%7C0.00%2C0.00%7C0.00" valueDataType="string"/>
+    <item name="layer" value="0" valueDataType="number"/>
+    <item name="behaviors">
+      <item type="behavior" behaviorType="TimerBehavior" name="计时器"/>
+    </item>
+  </item>
+  <item UID="94" plugin="AISprite" name="AISprite93" cacheAsBitmap="false" parallaxX="100" parallaxY="100" index="1" family="displayobject">
+    <item name="name" value="AISprite93" valueDataType="string"/>
+    <item name="uiGuid" value="94" valueDataType="string"/>
+    <item name="global" value="false" valueDataType="boolean"/>
+    <item name="visible" value="true" valueDataType="boolean"/>
+    <item name="x" value="1600" valueDataType="number"/>
+    <item name="y" value="1200" valueDataType="number"/>
+    <item name="anchorX" value="0.5" valueDataType="number"/>
+    <item name="anchorY" value="0.5" valueDataType="number"/>
+    <item name="width" value="3200" valueDataType="number"/>
+    <item name="height" value="2400" valueDataType="number"/>
+    <item name="angle" value="0" valueDataType="number"/>
+    <item name="alpha" value="0.2" valueDataType="number"/>
+    <item name="url" value="resource%2FuserAsset%2FcolorCube2.png" valueDataType="string"/>
+    <item name="enabled" value="false" valueDataType="boolean"/>
+    <item name="collision" value="false" valueDataType="boolean"/>
+    <item name="collisionData" value="0%2Fn0.00%7C2400.00%2C3200.00%7C2400.00%2C3200.00%7C0.00%2C0.00%7C0.00" sourceValue="0%2Fn0.00%7C2400.00%2C3200.00%7C2400.00%2C3200.00%7C0.00%2C0.00%7C0.00" valueDataType="string"/>
+    <item name="layer" value="0" valueDataType="number"/>
+  </item>
+  <item UID="106" plugin="AISprite" name="AISprite105" cacheAsBitmap="false" parallaxX="100" parallaxY="100" index="2" family="displayobject">
+    <item name="name" value="AISprite105" valueDataType="string"/>
+    <item name="uiGuid" value="106" valueDataType="string"/>
+    <item name="global" value="false" valueDataType="boolean"/>
+    <item name="visible" value="true" valueDataType="boolean"/>
+    <item name="x" value="338" valueDataType="number"/>
+    <item name="y" value="445" valueDataType="number"/>
+    <item name="anchorX" value="0.5" valueDataType="number"/>
+    <item name="anchorY" value="0.5" valueDataType="number"/>
+    <item name="width" value="200" valueDataType="number"/>
+    <item name="height" value="200" valueDataType="number"/>
+    <item name="angle" value="0" valueDataType="number"/>
+    <item name="alpha" value="0.3" valueDataType="number"/>
+    <item name="url" value="resource%2FuserAsset%2FglowBlack.png" valueDataType="string"/>
+    <item name="enabled" value="false" valueDataType="boolean"/>
+    <item name="collision" value="false" valueDataType="boolean"/>
+    <item name="collisionData" value="0%2Fn0.00%7C200.00%2C200.00%7C200.00%2C200.00%7C0.00%2C0.00%7C0.00" sourceValue="0%2Fn0.00%7C200.00%2C200.00%7C200.00%2C200.00%7C0.00%2C0.00%7C0.00" valueDataType="string"/>
+    <item name="layer" value="0" valueDataType="number"/>
+  </item>
+  <item UID="122" plugin="AISprite" name="border" cacheAsBitmap="false" parallaxX="100" parallaxY="100" index="0" family="displayobject">
+    <item name="name" value="border" valueDataType="string"/>
+    <item name="uiGuid" value="122" valueDataType="string"/>
+    <item name="global" value="false" valueDataType="boolean"/>
+    <item name="visible" value="true" valueDataType="boolean"/>
+    <item name="x" value="2840" valueDataType="number"/>
+    <item name="y" value="5" valueDataType="number"/>
+    <item name="anchorX" value="0.5" valueDataType="number"/>
+    <item name="anchorY" value="0.5" valueDataType="number"/>
+    <item name="width" value="5680" valueDataType="number"/>
+    <item name="height" value="10" valueDataType="number"/>
+    <item name="angle" value="0" valueDataType="number"/>
+    <item name="alpha" value="1" valueDataType="number"/>
+    <item name="url" value="resource%2FuserAsset%2FcolorCube2.png" valueDataType="string"/>
+    <item name="enabled" value="false" valueDataType="boolean"/>
+    <item name="collision" value="true" valueDataType="boolean"/>
+    <item name="collisionData" value="0%2Fn0.00%7C10.00%2C5680.00%7C10.00%2C5680.00%7C0.00%2C0.00%7C0.00" sourceValue="0%2Fn0.00%7C10.00%2C5680.00%7C10.00%2C5680.00%7C0.00%2C0.00%7C0.00" valueDataType="string"/>
+    <item name="layer" value="1" valueDataType="number"/>
+    <item name="behaviors">
+      <item type="behavior" behaviorType="SolidBehaivor" name="刚体"/>
+    </item>
+  </item>
+  <item UID="123" plugin="AISprite" name="border" cacheAsBitmap="false" parallaxX="100" parallaxY="100" index="1" family="displayobject">
+    <item name="name" value="border" valueDataType="string"/>
+    <item name="uiGuid" value="123" valueDataType="string"/>
+    <item name="global" value="false" valueDataType="boolean"/>
+    <item name="visible" value="true" valueDataType="boolean"/>
+    <item name="x" value="2840" valueDataType="number"/>
+    <item name="y" value="2395" valueDataType="number"/>
+    <item name="anchorX" value="0.5" valueDataType="number"/>
+    <item name="anchorY" value="0.5" valueDataType="number"/>
+    <item name="width" value="5680" valueDataType="number"/>
+    <item name="height" value="10" valueDataType="number"/>
+    <item name="angle" value="0" valueDataType="number"/>
+    <item name="alpha" value="1" valueDataType="number"/>
+    <item name="url" value="resource%2FuserAsset%2FcolorCube2.png" valueDataType="string"/>
+    <item name="enabled" value="false" valueDataType="boolean"/>
+    <item name="collision" value="true" valueDataType="boolean"/>
+    <item name="collisionData" value="0%2Fn0.00%7C10.00%2C5680.00%7C10.00%2C5680.00%7C0.00%2C0.00%7C0.00" sourceValue="0%2Fn0.00%7C10.00%2C5680.00%7C10.00%2C5680.00%7C0.00%2C0.00%7C0.00" valueDataType="string"/>
+    <item name="layer" value="1" valueDataType="number"/>
+    <item name="behaviors">
+      <item type="behavior" behaviorType="SolidBehaivor" name="刚体"/>
+    </item>
+  </item>
+  <item UID="125" plugin="AISprite" name="border" cacheAsBitmap="false" parallaxX="100" parallaxY="100" index="2" family="displayobject">
+    <item name="name" value="border" valueDataType="string"/>
+    <item name="uiGuid" value="125" valueDataType="string"/>
+    <item name="global" value="false" valueDataType="boolean"/>
+    <item name="visible" value="true" valueDataType="boolean"/>
+    <item name="x" value="3195" valueDataType="number"/>
+    <item name="y" value="1600" valueDataType="number"/>
+    <item name="anchorX" value="0.5" valueDataType="number"/>
+    <item name="anchorY" value="0.5" valueDataType="number"/>
+    <item name="width" value="10" valueDataType="number"/>
+    <item name="height" value="3200" valueDataType="number"/>
+    <item name="angle" value="0" valueDataType="number"/>
+    <item name="alpha" value="1" valueDataType="number"/>
+    <item name="url" value="resource%2FuserAsset%2FcolorCube2.png" valueDataType="string"/>
+    <item name="enabled" value="false" valueDataType="boolean"/>
+    <item name="collision" value="true" valueDataType="boolean"/>
+    <item name="collisionData" value="0%2Fn0.00%7C3200.00%2C10.00%7C3200.00%2C10.00%7C0.00%2C0.00%7C0.00" sourceValue="0%2Fn0.00%7C3200.00%2C10.00%7C3200.00%2C10.00%7C0.00%2C0.00%7C0.00" valueDataType="string"/>
+    <item name="layer" value="1" valueDataType="number"/>
+    <item name="behaviors">
+      <item type="behavior" behaviorType="SolidBehaivor" name="刚体"/>
+    </item>
+  </item>
+  <item UID="124" plugin="AISprite" name="border" cacheAsBitmap="false" parallaxX="100" parallaxY="100" index="3" family="displayobject">
+    <item name="name" value="border" valueDataType="string"/>
+    <item name="uiGuid" value="124" valueDataType="string"/>
+    <item name="global" value="false" valueDataType="boolean"/>
+    <item name="visible" value="true" valueDataType="boolean"/>
+    <item name="x" value="5" valueDataType="number"/>
+    <item name="y" value="1600" valueDataType="number"/>
+    <item name="anchorX" value="0.5" valueDataType="number"/>
+    <item name="anchorY" value="0.5" valueDataType="number"/>
+    <item name="width" value="10" valueDataType="number"/>
+    <item name="height" value="3200" valueDataType="number"/>
+    <item name="angle" value="0" valueDataType="number"/>
+    <item name="alpha" value="1" valueDataType="number"/>
+    <item name="url" value="resource%2FuserAsset%2FcolorCube2.png" valueDataType="string"/>
+    <item name="enabled" value="false" valueDataType="boolean"/>
+    <item name="collision" value="true" valueDataType="boolean"/>
+    <item name="collisionData" value="0%2Fn0.00%7C3200.00%2C10.00%7C3200.00%2C10.00%7C0.00%2C0.00%7C0.00" sourceValue="0%2Fn0.00%7C3200.00%2C10.00%7C3200.00%2C10.00%7C0.00%2C0.00%7C0.00" valueDataType="string"/>
+    <item name="layer" value="1" valueDataType="number"/>
+    <item name="behaviors">
+      <item type="behavior" behaviorType="SolidBehaivor" name="刚体"/>
+    </item>
+  </item>
+  <item UID="139" plugin="AISprite" name="itemBG" cacheAsBitmap="false" parallaxX="100" parallaxY="100" index="4" family="displayobject">
+    <item name="name" value="itemBG" valueDataType="string"/>
+    <item name="uiGuid" value="139" valueDataType="string"/>
+    <item name="global" value="false" valueDataType="boolean"/>
+    <item name="visible" value="true" valueDataType="boolean"/>
+    <item name="x" value="-73.05000000000001" valueDataType="number"/>
+    <item name="y" value="68.35000000000002" valueDataType="number"/>
+    <item name="anchorX" value="0.5" valueDataType="number"/>
+    <item name="anchorY" value="0.5" valueDataType="number"/>
+    <item name="width" value="90" valueDataType="number"/>
+    <item name="height" value="90" valueDataType="number"/>
+    <item name="angle" value="45" valueDataType="number"/>
+    <item name="alpha" value="1" valueDataType="number"/>
+    <item name="url" value="resource%2FuserAsset%2Fkuang2.png" valueDataType="string"/>
+    <item name="enabled" value="false" valueDataType="boolean"/>
+    <item name="collision" value="true" valueDataType="boolean"/>
+    <item name="collisionData" value="0%2Fn0.00%7C90.00%2C90.00%7C90.00%2C90.00%7C0.00%2C0.00%7C0.00" sourceValue="0%2Fn0.00%7C90.00%2C90.00%7C90.00%2C90.00%7C0.00%2C0.00%7C0.00" valueDataType="string"/>
+    <item name="layer" value="1" valueDataType="number"/>
+  </item>
+  <item UID="162" plugin="AISprite" name="itemBGb" cacheAsBitmap="false" parallaxX="100" parallaxY="100" index="5" family="displayobject">
+    <item name="name" value="itemBGb" valueDataType="string"/>
+    <item name="uiGuid" value="162" valueDataType="string"/>
+    <item name="global" value="false" valueDataType="boolean"/>
+    <item name="visible" value="true" valueDataType="boolean"/>
+    <item name="x" value="-200" valueDataType="number"/>
+    <item name="y" value="68.35000000000002" valueDataType="number"/>
+    <item name="anchorX" value="0.5" valueDataType="number"/>
+    <item name="anchorY" value="0.5" valueDataType="number"/>
+    <item name="width" value="90" valueDataType="number"/>
+    <item name="height" value="90" valueDataType="number"/>
+    <item name="angle" value="45" valueDataType="number"/>
+    <item name="alpha" value="1" valueDataType="number"/>
+    <item name="url" value="resource%2FuserAsset%2Fkuang2.png" valueDataType="string"/>
+    <item name="enabled" value="false" valueDataType="boolean"/>
+    <item name="collision" value="true" valueDataType="boolean"/>
+    <item name="collisionData" value="0%2Fn0.00%7C90.00%2C90.00%7C90.00%2C90.00%7C0.00%2C0.00%7C0.00" sourceValue="0%2Fn0.00%7C90.00%2C90.00%7C90.00%2C90.00%7C0.00%2C0.00%7C0.00" valueDataType="string"/>
+    <item name="layer" value="1" valueDataType="number"/>
+  </item>
+  <item UID="166" plugin="AISprite" name="itemBGc" cacheAsBitmap="false" parallaxX="100" parallaxY="100" index="6" family="displayobject">
+    <item name="name" value="itemBGc" valueDataType="string"/>
+    <item name="uiGuid" value="166" valueDataType="string"/>
+    <item name="global" value="false" valueDataType="boolean"/>
+    <item name="visible" value="true" valueDataType="boolean"/>
+    <item name="x" value="-330" valueDataType="number"/>
+    <item name="y" value="68.35000000000002" valueDataType="number"/>
+    <item name="anchorX" value="0.5" valueDataType="number"/>
+    <item name="anchorY" value="0.5" valueDataType="number"/>
+    <item name="width" value="90" valueDataType="number"/>
+    <item name="height" value="90" valueDataType="number"/>
+    <item name="angle" value="45" valueDataType="number"/>
+    <item name="alpha" value="1" valueDataType="number"/>
+    <item name="url" value="resource%2FuserAsset%2Fkuang2.png" valueDataType="string"/>
+    <item name="enabled" value="false" valueDataType="boolean"/>
+    <item name="collision" value="true" valueDataType="boolean"/>
+    <item name="collisionData" value="0%2Fn0.00%7C90.00%2C90.00%7C90.00%2C90.00%7C0.00%2C0.00%7C0.00" sourceValue="0%2Fn0.00%7C90.00%2C90.00%7C90.00%2C90.00%7C0.00%2C0.00%7C0.00" valueDataType="string"/>
+    <item name="layer" value="1" valueDataType="number"/>
+  </item>
+  <item UID="109" plugin="AISprite" name="player13" cacheAsBitmap="false" parallaxX="100" parallaxY="100" index="7" family="displayobject">
+    <item name="name" value="player13" valueDataType="string"/>
+    <item name="uiGuid" value="109" valueDataType="string"/>
+    <item name="global" value="false" valueDataType="boolean"/>
+    <item name="visible" value="true" valueDataType="boolean"/>
+    <item name="x" value="-100" valueDataType="number"/>
+    <item name="y" value="320" valueDataType="number"/>
+    <item name="anchorX" value="0.5" valueDataType="number"/>
+    <item name="anchorY" value="1" valueDataType="number"/>
+    <item name="width" value="30" valueDataType="number"/>
+    <item name="height" value="100" valueDataType="number"/>
+    <item name="angle" value="90" valueDataType="number"/>
+    <item name="alpha" value="1" valueDataType="number"/>
+    <item name="url" value="resource%2FuserAsset%2FTriange0.png" valueDataType="string"/>
+    <item name="enabled" value="false" valueDataType="boolean"/>
+    <item name="collision" value="true" valueDataType="boolean"/>
+    <item name="collisionData" value="0%2Fn15.42%7C-1.22%2C33.18%7C90.09%2C-2.52%7C90.09" sourceValue="0%2Fn15.42%7C-1.22%2C33.18%7C90.09%2C-2.52%7C90.09" valueDataType="string"/>
+    <item name="layer" value="1" valueDataType="number"/>
+    <item name="behaviors">
+      <item type="behavior" behaviorType="PinBehavior" name="别针"/>
+    </item>
+  </item>
+  <item UID="114" plugin="AISprite" name="player14" cacheAsBitmap="false" parallaxX="100" parallaxY="100" index="8" family="displayobject">
+    <item name="name" value="player14" valueDataType="string"/>
+    <item name="uiGuid" value="114" valueDataType="string"/>
+    <item name="global" value="false" valueDataType="boolean"/>
+    <item name="visible" value="true" valueDataType="boolean"/>
+    <item name="x" value="-100" valueDataType="number"/>
+    <item name="y" value="320" valueDataType="number"/>
+    <item name="anchorX" value="1.5" valueDataType="number"/>
+    <item name="anchorY" value="0.5" valueDataType="number"/>
+    <item name="width" value="50" valueDataType="number"/>
+    <item name="height" value="50" valueDataType="number"/>
+    <item name="angle" value="0" valueDataType="number"/>
+    <item name="alpha" value="1" valueDataType="number"/>
+    <item name="url" value="resource%2FuserAsset%2Fsphere0.png" valueDataType="string"/>
+    <item name="enabled" value="false" valueDataType="boolean"/>
+    <item name="collision" value="true" valueDataType="boolean"/>
+    <item name="collisionData" value="1%2Fn25%7C25%7C25" sourceValue="1%2Fn25%7C25%7C25" valueDataType="string"/>
+    <item name="layer" value="1" valueDataType="number"/>
+    <item name="behaviors">
+      <item type="behavior" behaviorType="PinBehavior" name="别针"/>
+    </item>
+  </item>
+  <item UID="116" plugin="AISprite" name="player15" cacheAsBitmap="false" parallaxX="100" parallaxY="100" index="9" family="displayobject">
+    <item name="name" value="player15" valueDataType="string"/>
+    <item name="uiGuid" value="116" valueDataType="string"/>
+    <item name="global" value="false" valueDataType="boolean"/>
+    <item name="visible" value="true" valueDataType="boolean"/>
+    <item name="x" value="-100" valueDataType="number"/>
+    <item name="y" value="320" valueDataType="number"/>
+    <item name="anchorX" value="0.5" valueDataType="number"/>
+    <item name="anchorY" value="0.5" valueDataType="number"/>
+    <item name="width" value="80" valueDataType="number"/>
+    <item name="height" value="120" valueDataType="number"/>
+    <item name="angle" value="0" valueDataType="number"/>
+    <item name="alpha" value="1" valueDataType="number"/>
+    <item name="url" value="resource%2FuserAsset%2Fsphere1.png" valueDataType="string"/>
+    <item name="enabled" value="false" valueDataType="boolean"/>
+    <item name="collision" value="false" valueDataType="boolean"/>
+    <item name="collisionData" value="0%2Fn0.00%7C120.00%2C80.00%7C120.00%2C80.00%7C0.00%2C0.00%7C0.00" sourceValue="0%2Fn0.00%7C120.00%2C80.00%7C120.00%2C80.00%7C0.00%2C0.00%7C0.00" valueDataType="string"/>
+    <item name="layer" value="1" valueDataType="number"/>
+    <item name="behaviors">
+      <item type="behavior" behaviorType="PinBehavior" name="别针"/>
+    </item>
+  </item>
+  <item UID="143" plugin="AISprite" name="itemIcn1" cacheAsBitmap="false" parallaxX="100" parallaxY="100" index="10" family="displayobject">
+    <item name="name" value="itemIcn1" valueDataType="string"/>
+    <item name="uiGuid" value="143" valueDataType="string"/>
+    <item name="global" value="false" valueDataType="boolean"/>
+    <item name="visible" value="true" valueDataType="boolean"/>
+    <item name="x" value="-73.05000000000001" valueDataType="number"/>
+    <item name="y" value="68.35000000000002" valueDataType="number"/>
+    <item name="anchorX" value="0.5" valueDataType="number"/>
+    <item name="anchorY" value="0.5" valueDataType="number"/>
+    <item name="width" value="30" valueDataType="number"/>
+    <item name="height" value="90" valueDataType="number"/>
+    <item name="angle" value="0" valueDataType="number"/>
+    <item name="alpha" value="1" valueDataType="number"/>
+    <item name="url" value="resource%2FuserAsset%2FTriange0.png" valueDataType="string"/>
+    <item name="enabled" value="false" valueDataType="boolean"/>
+    <item name="collision" value="false" valueDataType="boolean"/>
+    <item name="collisionData" value="0%2Fn15.42%7C-1.22%2C33.18%7C90.09%2C-2.52%7C90.09" sourceValue="0%2Fn15.42%7C-1.22%2C33.18%7C90.09%2C-2.52%7C90.09" valueDataType="string"/>
+    <item name="layer" value="1" valueDataType="number"/>
+  </item>
+  <item UID="145" plugin="AISprite" name="itemIcn2" cacheAsBitmap="false" parallaxX="100" parallaxY="100" index="11" family="displayobject">
+    <item name="name" value="itemIcn2" valueDataType="string"/>
+    <item name="uiGuid" value="145" valueDataType="string"/>
+    <item name="global" value="false" valueDataType="boolean"/>
+    <item name="visible" value="true" valueDataType="boolean"/>
+    <item name="x" value="-330" valueDataType="number"/>
+    <item name="y" value="68.35000000000002" valueDataType="number"/>
+    <item name="anchorX" value="0.5" valueDataType="number"/>
+    <item name="anchorY" value="0.5" valueDataType="number"/>
+    <item name="width" value="80" valueDataType="number"/>
+    <item name="height" value="40" valueDataType="number"/>
+    <item name="angle" value="0" valueDataType="number"/>
+    <item name="alpha" value="0.5" valueDataType="number"/>
+    <item name="url" value="resource%2FuserAsset%2Fsphere0.png" valueDataType="string"/>
+    <item name="enabled" value="false" valueDataType="boolean"/>
+    <item name="collision" value="false" valueDataType="boolean"/>
+    <item name="collisionData" value="0%2Fn0.00%7C40.00%2C80.00%7C40.00%2C80.00%7C0.00%2C0.00%7C0.00" sourceValue="0%2Fn0.00%7C40.00%2C80.00%7C40.00%2C80.00%7C0.00%2C0.00%7C0.00" valueDataType="string"/>
+    <item name="layer" value="1" valueDataType="number"/>
+  </item>
+  <item UID="147" plugin="AISprite" name="itemIcn3" cacheAsBitmap="false" parallaxX="100" parallaxY="100" index="12" family="displayobject">
+    <item name="name" value="itemIcn3" valueDataType="string"/>
+    <item name="uiGuid" value="147" valueDataType="string"/>
+    <item name="global" value="false" valueDataType="boolean"/>
+    <item name="visible" value="true" valueDataType="boolean"/>
+    <item name="x" value="-200" valueDataType="number"/>
+    <item name="y" value="68.35" valueDataType="number"/>
+    <item name="anchorX" value="0.5" valueDataType="number"/>
+    <item name="anchorY" value="0.5" valueDataType="number"/>
+    <item name="width" value="40" valueDataType="number"/>
+    <item name="height" value="50" valueDataType="number"/>
+    <item name="angle" value="0" valueDataType="number"/>
+    <item name="alpha" value="1" valueDataType="number"/>
+    <item name="url" value="resource%2FuserAsset%2Fsphere0.png" valueDataType="string"/>
+    <item name="enabled" value="false" valueDataType="boolean"/>
+    <item name="collision" value="false" valueDataType="boolean"/>
+    <item name="collisionData" value="0%2Fn0.00%7C50.00%2C40.00%7C50.00%2C40.00%7C0.00%2C0.00%7C0.00" sourceValue="0%2Fn0.00%7C50.00%2C40.00%7C50.00%2C40.00%7C0.00%2C0.00%7C0.00" valueDataType="string"/>
+    <item name="layer" value="1" valueDataType="number"/>
+  </item>
+  <item UID="119" plugin="AISprite" name="AIplayer" cacheAsBitmap="false" parallaxX="100" parallaxY="100" index="13" family="displayobject">
+    <item name="name" value="AIplayer" valueDataType="string"/>
+    <item name="uiGuid" value="119" valueDataType="string"/>
+    <item name="global" value="false" valueDataType="boolean"/>
+    <item name="visible" value="true" valueDataType="boolean"/>
+    <item name="x" value="938" valueDataType="number"/>
+    <item name="y" value="510" valueDataType="number"/>
+    <item name="anchorX" value="0.5" valueDataType="number"/>
+    <item name="anchorY" value="0.5" valueDataType="number"/>
+    <item name="width" value="80" valueDataType="number"/>
+    <item name="height" value="80" valueDataType="number"/>
+    <item name="angle" value="0" valueDataType="number"/>
+    <item name="alpha" value="0.5" valueDataType="number"/>
+    <item name="url" value="resource%2FuserAsset%2Fsphere0.png" valueDataType="string"/>
+    <item name="enabled" value="false" valueDataType="boolean"/>
+    <item name="collision" value="true" valueDataType="boolean"/>
+    <item name="collisionData" value="1%2Fn40%7C40%7C40" sourceValue="1%2Fn40%7C40%7C40" valueDataType="string"/>
+    <item name="layer" value="1" valueDataType="number"/>
+    <item name="behaviors">
+      <item type="behavior" behaviorType="BulletBehaivor" name="子弹">
+        <item valueDataType="number" value="200" name="speed"/>
+        <item valueDataType="number" value="0" name="acceleration"/>
+        <item valueDataType="number" value="0" name="gravity"/>
+        <item valueDataType="number" value="0" name="angle"/>
+        <item valueDataType="number" value="1" name="bounceOffSolids"/>
+        <item valueDataType="number" value="2" name="solidChangedAngle"/>
+      </item>
+      <item type="behavior" behaviorType="TurretBehaivor" name="炮塔">
+        <item valueDataType="number" value="300" name="range"/>
+        <item valueDataType="number" value="1" name="rateOfFire"/>
+        <item valueDataType="number" value="300" name="rotateSpeed"/>
+        <item valueDataType="number" value="1" name="targetMode"/>
+        <item valueDataType="any" value="" name="compareInstanceVariables"/>
+        <item valueDataType="number" value="1" name="sortMode"/>
+      </item>
+      <item type="behavior" behaviorType="TimerBehavior" name="计时器"/>
+    </item>
+  </item>
+  <item UID="357" plugin="AISprite" name="AIplayer" cacheAsBitmap="false" parallaxX="100" parallaxY="100" index="14" family="displayobject">
+    <item name="name" value="AIplayer" valueDataType="string"/>
+    <item name="uiGuid" value="357" valueDataType="string"/>
+    <item name="global" value="false" valueDataType="boolean"/>
+    <item name="visible" value="true" valueDataType="boolean"/>
+    <item name="x" value="1826.4929936981464" valueDataType="number"/>
+    <item name="y" value="1044.598043306495" valueDataType="number"/>
+    <item name="anchorX" value="0.5" valueDataType="number"/>
+    <item name="anchorY" value="0.5" valueDataType="number"/>
+    <item name="width" value="80" valueDataType="number"/>
+    <item name="height" value="80" valueDataType="number"/>
+    <item name="angle" value="0" valueDataType="number"/>
+    <item name="alpha" value="1" valueDataType="number"/>
+    <item name="url" value="resource%2FuserAsset%2Fsphere0.png" valueDataType="string"/>
+    <item name="enabled" value="false" valueDataType="boolean"/>
+    <item name="collision" value="true" valueDataType="boolean"/>
+    <item name="collisionData" value="1%2Fn40%7C40%7C40" sourceValue="1%2Fn40%7C40%7C40" valueDataType="string"/>
+    <item name="layer" value="1" valueDataType="number"/>
+    <item name="behaviors">
+      <item type="behavior" behaviorType="BulletBehaivor" name="子弹">
+        <item valueDataType="number" value="200" name="speed"/>
+        <item valueDataType="number" value="0" name="acceleration"/>
+        <item valueDataType="number" value="0" name="gravity"/>
+        <item valueDataType="number" value="0" name="angle"/>
+        <item valueDataType="number" value="1" name="bounceOffSolids"/>
+        <item valueDataType="number" value="2" name="solidChangedAngle"/>
+      </item>
+      <item type="behavior" behaviorType="TurretBehaivor" name="炮塔">
+        <item valueDataType="number" value="300" name="range"/>
+        <item valueDataType="number" value="1" name="rateOfFire"/>
+        <item valueDataType="number" value="300" name="rotateSpeed"/>
+        <item valueDataType="number" value="1" name="targetMode"/>
+        <item valueDataType="any" value="" name="compareInstanceVariables"/>
+        <item valueDataType="number" value="1" name="sortMode"/>
+      </item>
+      <item type="behavior" behaviorType="TimerBehavior" name="计时器"/>
+    </item>
+  </item>
+  <item UID="358" plugin="AISprite" name="AIplayer" cacheAsBitmap="false" parallaxX="100" parallaxY="100" index="15" family="displayobject">
+    <item name="name" value="AIplayer" valueDataType="string"/>
+    <item name="uiGuid" value="358" valueDataType="string"/>
+    <item name="global" value="false" valueDataType="boolean"/>
+    <item name="visible" value="true" valueDataType="boolean"/>
+    <item name="x" value="880.7117498021694" valueDataType="number"/>
+    <item name="y" value="1377.541726976304" valueDataType="number"/>
+    <item name="anchorX" value="0.5" valueDataType="number"/>
+    <item name="anchorY" value="0.5" valueDataType="number"/>
+    <item name="width" value="80" valueDataType="number"/>
+    <item name="height" value="80" valueDataType="number"/>
+    <item name="angle" value="0" valueDataType="number"/>
+    <item name="alpha" value="0.8" valueDataType="number"/>
+    <item name="url" value="resource%2FuserAsset%2Fsphere0.png" valueDataType="string"/>
+    <item name="enabled" value="false" valueDataType="boolean"/>
+    <item name="collision" value="true" valueDataType="boolean"/>
+    <item name="collisionData" value="1%2Fn40%7C40%7C40" sourceValue="1%2Fn40%7C40%7C40" valueDataType="string"/>
+    <item name="layer" value="1" valueDataType="number"/>
+    <item name="behaviors">
+      <item type="behavior" behaviorType="BulletBehaivor" name="子弹">
+        <item valueDataType="number" value="200" name="speed"/>
+        <item valueDataType="number" value="0" name="acceleration"/>
+        <item valueDataType="number" value="0" name="gravity"/>
+        <item valueDataType="number" value="0" name="angle"/>
+        <item valueDataType="number" value="1" name="bounceOffSolids"/>
+        <item valueDataType="number" value="2" name="solidChangedAngle"/>
+      </item>
+      <item type="behavior" behaviorType="TurretBehaivor" name="炮塔">
+        <item valueDataType="number" value="300" name="range"/>
+        <item valueDataType="number" value="1" name="rateOfFire"/>
+        <item valueDataType="number" value="300" name="rotateSpeed"/>
+        <item valueDataType="number" value="1" name="targetMode"/>
+        <item valueDataType="any" value="" name="compareInstanceVariables"/>
+        <item valueDataType="number" value="1" name="sortMode"/>
+      </item>
+      <item type="behavior" behaviorType="TimerBehavior" name="计时器"/>
+    </item>
+  </item>
+  <item UID="99" plugin="AISprite" name="player1" cacheAsBitmap="false" parallaxX="100" parallaxY="100" index="0" family="displayobject">
+    <item name="name" value="player1" valueDataType="string"/>
+    <item name="uiGuid" value="99" valueDataType="string"/>
+    <item name="global" value="false" valueDataType="boolean"/>
+    <item name="visible" value="true" valueDataType="boolean"/>
+    <item name="x" value="237.5" valueDataType="number"/>
+    <item name="y" value="215.5" valueDataType="number"/>
+    <item name="anchorX" value="0.5" valueDataType="number"/>
+    <item name="anchorY" value="0.5" valueDataType="number"/>
+    <item name="width" value="100" valueDataType="number"/>
+    <item name="height" value="100" valueDataType="number"/>
+    <item name="angle" value="0" valueDataType="number"/>
+    <item name="alpha" value="1" valueDataType="number"/>
+    <item name="url" value="resource%2FuserAsset%2Fsphere2.png" valueDataType="string"/>
+    <item name="enabled" value="false" valueDataType="boolean"/>
+    <item name="collision" value="true" valueDataType="boolean"/>
+    <item name="collisionData" value="1%2Fn50%7C50%7C50" sourceValue="1%2Fn50%7C50%7C50" valueDataType="string"/>
+    <item name="layer" value="2" valueDataType="number"/>
+    <item name="behaviors">
+      <item type="behavior" behaviorType="BulletBehaivor" name="子弹">
+        <item valueDataType="number" value="400" name="speed"/>
+        <item valueDataType="number" value="0" name="acceleration"/>
+        <item valueDataType="number" value="0" name="gravity"/>
+        <item valueDataType="number" value="0" name="angle"/>
+        <item valueDataType="number" value="1" name="bounceOffSolids"/>
+        <item valueDataType="number" value="2" name="solidChangedAngle"/>
+      </item>
+      <item type="behavior" behaviorType="ScrollToBehavior" name="摄像机">
+        <item valueDataType="boolean" value="false" name="isBounds"/>
+      </item>
+      <item type="behavior" behaviorType="BoundsOfRectBehaivor" name="边界限制">
+        <item valueDataType="number" value="0" name="boundType"/>
+        <item valueDataType="number" value="100" name="x"/>
+        <item valueDataType="number" value="100" name="y"/>
+        <item valueDataType="number" value="5500" name="width"/>
+        <item valueDataType="number" value="3000" name="height"/>
+      </item>
+    </item>
+  </item>
+  <item UID="101" plugin="AISprite" name="player11" cacheAsBitmap="false" parallaxX="100" parallaxY="100" index="1" family="displayobject">
+    <item name="name" value="player11" valueDataType="string"/>
+    <item name="uiGuid" value="101" valueDataType="string"/>
+    <item name="global" value="false" valueDataType="boolean"/>
+    <item name="visible" value="true" valueDataType="boolean"/>
+    <item name="x" value="237.5" valueDataType="number"/>
+    <item name="y" value="215.5" valueDataType="number"/>
+    <item name="anchorX" value="0.5" valueDataType="number"/>
+    <item name="anchorY" value="0.5" valueDataType="number"/>
+    <item name="width" value="95" valueDataType="number"/>
+    <item name="height" value="95" valueDataType="number"/>
+    <item name="angle" value="0" valueDataType="number"/>
+    <item name="alpha" value="0.8" valueDataType="number"/>
+    <item name="url" value="resource%2FuserAsset%2Fsphere0.png" valueDataType="string"/>
+    <item name="enabled" value="false" valueDataType="boolean"/>
+    <item name="collision" value="false" valueDataType="boolean"/>
+    <item name="collisionData" value="0%2Fn0.00%7C95.00%2C95.00%7C95.00%2C95.00%7C0.00%2C0.00%7C0.00" sourceValue="0%2Fn0.00%7C95.00%2C95.00%7C95.00%2C95.00%7C0.00%2C0.00%7C0.00" valueDataType="string"/>
+    <item name="layer" value="2" valueDataType="number"/>
+    <item name="behaviors">
+      <item type="behavior" behaviorType="PinBehavior" name="别针"/>
+    </item>
+  </item>
+  <item UID="103" plugin="AISprite" name="player12" cacheAsBitmap="false" parallaxX="100" parallaxY="100" index="2" family="displayobject">
+    <item name="name" value="player12" valueDataType="string"/>
+    <item name="uiGuid" value="103" valueDataType="string"/>
+    <item name="global" value="false" valueDataType="boolean"/>
+    <item name="visible" value="true" valueDataType="boolean"/>
+    <item name="x" value="267.5" valueDataType="number"/>
+    <item name="y" value="215.5" valueDataType="number"/>
+    <item name="anchorX" value="0.5" valueDataType="number"/>
+    <item name="anchorY" value="0.5" valueDataType="number"/>
+    <item name="width" value="12" valueDataType="number"/>
+    <item name="height" value="10" valueDataType="number"/>
+    <item name="angle" value="0" valueDataType="number"/>
+    <item name="alpha" value="1" valueDataType="number"/>
+    <item name="url" value="resource%2FuserAsset%2Fsphere2.png" valueDataType="string"/>
+    <item name="enabled" value="false" valueDataType="boolean"/>
+    <item name="collision" value="false" valueDataType="boolean"/>
+    <item name="collisionData" value="0%2Fn0.00%7C10.00%2C12.00%7C10.00%2C12.00%7C0.00%2C0.00%7C0.00" sourceValue="0%2Fn0.00%7C10.00%2C12.00%7C10.00%2C12.00%7C0.00%2C0.00%7C0.00" valueDataType="string"/>
+    <item name="layer" value="2" valueDataType="number"/>
+    <item name="behaviors">
+      <item type="behavior" behaviorType="PinBehavior" name="别针"/>
+    </item>
+  </item>
+  <item UID="281" plugin="AITextField" name="numberE" cacheAsBitmap="false" parallaxX="0" parallaxY="0" index="0" family="text">
+    <item name="name" value="numberE" valueDataType="string"/>
+    <item name="uiGuid" value="281" valueDataType="string"/>
+    <item name="global" value="false" valueDataType="boolean"/>
+    <item name="visible" value="true" valueDataType="boolean"/>
+    <item name="x" value="568" valueDataType="number"/>
+    <item name="y" value="35" valueDataType="number"/>
+    <item name="anchorX" value="0.5" valueDataType="number"/>
+    <item name="anchorY" value="0.5" valueDataType="number"/>
+    <item name="width" value="150" valueDataType="number"/>
+    <item name="height" value="50" valueDataType="number"/>
+    <item name="angle" value="0" valueDataType="number"/>
+    <item name="alpha" value="1" valueDataType="number"/>
+    <item name="text" value="%E6%96%87%E6%9C%AC%E6%A1%86" valueDataType="string"/>
+    <item name="fontFamily" value="Adobe%20%E9%BB%91%E4%BD%93%20Std%20R" valueDataType="string"/>
+    <item name="size" value="36" valueDataType="number"/>
+    <item name="textColor" value="16777215" valueDataType="number"/>
+    <item name="bold" value="true" valueDataType="boolean"/>
+    <item name="enableInput" value="false" valueDataType="boolean"/>
+    <item name="inputType" value="text" valueDataType="string"/>
+    <item name="textAlign" value="center" valueDataType="string"/>
+    <item name="verticalAlign" value="middle" valueDataType="string"/>
+    <item name="maxChars" value="100" valueDataType="number"/>
+    <item name="italic" value="false" valueDataType="boolean"/>
+    <item name="wordWrap" value="false" valueDataType="boolean"/>
+    <item name="enabled" value="true" valueDataType="boolean"/>
+    <item name="collision" value="false" valueDataType="boolean"/>
+    <item name="layer" value="3" valueDataType="number"/>
+  </item>
+  <item UID="133" plugin="AISprite" name="screenMask" cacheAsBitmap="false" parallaxX="0" parallaxY="0" index="1" family="displayobject">
+    <item name="name" value="screenMask" valueDataType="string"/>
+    <item name="uiGuid" value="133" valueDataType="string"/>
+    <item name="global" value="false" valueDataType="boolean"/>
+    <item name="visible" value="true" valueDataType="boolean"/>
+    <item name="x" value="568" valueDataType="number"/>
+    <item name="y" value="320" valueDataType="number"/>
+    <item name="anchorX" value="0.5" valueDataType="number"/>
+    <item name="anchorY" value="0.5" valueDataType="number"/>
+    <item name="width" value="1136" valueDataType="number"/>
+    <item name="height" value="640" valueDataType="number"/>
+    <item name="angle" value="0" valueDataType="number"/>
+    <item name="alpha" value="1" valueDataType="number"/>
+    <item name="url" value="resource%2FuserAsset%2FcolorCube2.png" valueDataType="string"/>
+    <item name="enabled" value="false" valueDataType="boolean"/>
+    <item name="collision" value="false" valueDataType="boolean"/>
+    <item name="collisionData" value="0%2Fn0.00%7C640.00%2C1136.00%7C640.00%2C1136.00%7C0.00%2C0.00%7C0.00" sourceValue="0%2Fn0.00%7C640.00%2C1136.00%7C640.00%2C1136.00%7C0.00%2C0.00%7C0.00" valueDataType="string"/>
+    <item name="layer" value="3" valueDataType="number"/>
+    <item name="behaviors">
+      <item type="behavior" behaviorType="FadeBehavior" name="淡入淡出">
+        <item valueDataType="number" value="1" name="activeAtStartType"/>
+        <item valueDataType="number" value="0" name="fadeInTime"/>
+        <item valueDataType="number" value="1" name="waitTime"/>
+        <item valueDataType="number" value="1" name="fadeOutTime"/>
+        <item valueDataType="number" value="1" name="loopTimes"/>
+        <item valueDataType="number" value="1" name="destoryType"/>
+      </item>
+    </item>
+  </item>
+  <item UID="136" plugin="AITextField" name="Title" cacheAsBitmap="false" parallaxX="0" parallaxY="0" index="2" family="text">
+    <item name="name" value="Title" valueDataType="string"/>
+    <item name="uiGuid" value="136" valueDataType="string"/>
+    <item name="global" value="false" valueDataType="boolean"/>
+    <item name="visible" value="true" valueDataType="boolean"/>
+    <item name="x" value="568" valueDataType="number"/>
+    <item name="y" value="320" valueDataType="number"/>
+    <item name="anchorX" value="0.5" valueDataType="number"/>
+    <item name="anchorY" value="0.5" valueDataType="number"/>
+    <item name="width" value="300" valueDataType="number"/>
+    <item name="height" value="100" valueDataType="number"/>
+    <item name="angle" value="0" valueDataType="number"/>
+    <item name="alpha" value="1" valueDataType="number"/>
+    <item name="text" value="%E6%96%87%E6%9C%AC%E6%A1%86" valueDataType="string"/>
+    <item name="fontFamily" value="Adobe%20%E9%BB%91%E4%BD%93%20Std%20R" valueDataType="string"/>
+    <item name="size" value="50" valueDataType="number"/>
+    <item name="textColor" value="16777215" valueDataType="number"/>
+    <item name="bold" value="true" valueDataType="boolean"/>
+    <item name="enableInput" value="false" valueDataType="boolean"/>
+    <item name="inputType" value="text" valueDataType="string"/>
+    <item name="textAlign" value="center" valueDataType="string"/>
+    <item name="verticalAlign" value="middle" valueDataType="string"/>
+    <item name="maxChars" value="100" valueDataType="number"/>
+    <item name="italic" value="false" valueDataType="boolean"/>
+    <item name="wordWrap" value="false" valueDataType="boolean"/>
+    <item name="enabled" value="true" valueDataType="boolean"/>
+    <item name="collision" value="false" valueDataType="boolean"/>
+    <item name="layer" value="3" valueDataType="number"/>
+    <item name="behaviors">
+      <item type="behavior" behaviorType="FadeBehavior" name="淡入淡出">
+        <item valueDataType="number" value="1" name="activeAtStartType"/>
+        <item valueDataType="number" value="0.5" name="fadeInTime"/>
+        <item valueDataType="number" value="1" name="waitTime"/>
+        <item valueDataType="number" value="1" name="fadeOutTime"/>
+        <item valueDataType="number" value="1" name="loopTimes"/>
+        <item valueDataType="number" value="1" name="destoryType"/>
+      </item>
+    </item>
+  </item>
+  <item UID="130" plugin="AITextField" name="log" cacheAsBitmap="false" parallaxX="0" parallaxY="0" index="3" family="text">
+    <item name="name" value="log" valueDataType="string"/>
+    <item name="uiGuid" value="130" valueDataType="string"/>
+    <item name="global" value="false" valueDataType="boolean"/>
+    <item name="visible" value="true" valueDataType="boolean"/>
+    <item name="x" value="70" valueDataType="number"/>
+    <item name="y" value="30" valueDataType="number"/>
+    <item name="anchorX" value="0.5" valueDataType="number"/>
+    <item name="anchorY" value="0.5" valueDataType="number"/>
+    <item name="width" value="120" valueDataType="number"/>
+    <item name="height" value="40" valueDataType="number"/>
+    <item name="angle" value="0" valueDataType="number"/>
+    <item name="alpha" value="1" valueDataType="number"/>
+    <item name="text" value="log%3A" valueDataType="string"/>
+    <item name="fontFamily" value="%E5%AE%8B%E4%BD%93" valueDataType="string"/>
+    <item name="size" value="12" valueDataType="number"/>
+    <item name="textColor" value="16777215" valueDataType="number"/>
+    <item name="bold" value="false" valueDataType="boolean"/>
+    <item name="enableInput" value="false" valueDataType="boolean"/>
+    <item name="inputType" value="text" valueDataType="string"/>
+    <item name="textAlign" value="center" valueDataType="string"/>
+    <item name="verticalAlign" value="middle" valueDataType="string"/>
+    <item name="maxChars" value="100" valueDataType="number"/>
+    <item name="italic" value="false" valueDataType="boolean"/>
+    <item name="wordWrap" value="false" valueDataType="boolean"/>
+    <item name="enabled" value="true" valueDataType="boolean"/>
+    <item name="collision" value="false" valueDataType="boolean"/>
+    <item name="layer" value="3" valueDataType="number"/>
+  </item>
+</layout>
