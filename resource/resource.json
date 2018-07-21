@@ -1,1 +1,1 @@
-{"groups":[{"keys":"egretIcon","name":"preload"}],"resources":[{"url":"assets/egret_icon.png","type":"image","name":"egretIcon"}]}
+{"resources":[{"url":"assets/egret_icon.png","type":"image","name":"egretIcon"}],"groups":[{"keys":"egretIcon","name":"preload"}]}

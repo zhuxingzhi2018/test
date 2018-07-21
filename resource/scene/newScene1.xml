@@ -238,12 +238,12 @@
     <item name="visible" value="true" valueDataType="boolean"/>
     <item name="x" value="-100" valueDataType="number"/>
     <item name="y" value="320" valueDataType="number"/>
-    <item name="anchorX" value="1.5" valueDataType="number"/>
+    <item name="anchorX" value="1.2" valueDataType="number"/>
     <item name="anchorY" value="0.5" valueDataType="number"/>
     <item name="width" value="50" valueDataType="number"/>
     <item name="height" value="50" valueDataType="number"/>
     <item name="angle" value="0" valueDataType="number"/>
-    <item name="alpha" value="1" valueDataType="number"/>
+    <item name="alpha" value="0.8" valueDataType="number"/>
     <item name="url" value="resource%2FuserAsset%2Fsphere0.png" valueDataType="string"/>
     <item name="enabled" value="false" valueDataType="boolean"/>
     <item name="collision" value="true" valueDataType="boolean"/>
@@ -265,7 +265,7 @@
     <item name="width" value="80" valueDataType="number"/>
     <item name="height" value="120" valueDataType="number"/>
     <item name="angle" value="0" valueDataType="number"/>
-    <item name="alpha" value="1" valueDataType="number"/>
+    <item name="alpha" value="0.9" valueDataType="number"/>
     <item name="url" value="resource%2FuserAsset%2Fsphere1.png" valueDataType="string"/>
     <item name="enabled" value="false" valueDataType="boolean"/>
     <item name="collision" value="false" valueDataType="boolean"/>
@@ -600,7 +600,7 @@
     <item name="height" value="100" valueDataType="number"/>
     <item name="angle" value="0" valueDataType="number"/>
     <item name="alpha" value="1" valueDataType="number"/>
-    <item name="text" value="%E6%96%87%E6%9C%AC%E6%A1%86" valueDataType="string"/>
+    <item name="text" value="" valueDataType="string"/>
     <item name="fontFamily" value="Adobe%20%E9%BB%91%E4%BD%93%20Std%20R" valueDataType="string"/>
     <item name="size" value="50" valueDataType="number"/>
     <item name="textColor" value="16777215" valueDataType="number"/>

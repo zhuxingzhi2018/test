@@ -1181,6 +1181,68 @@
     <item name="collisionData" value="0%2Fn0.00%7C64.00%2C64.00%7C64.00%2C64.00%7C0.00%2C0.00%7C0.00" sourceValue="0%2Fn0.00%7C64.00%2C64.00%7C64.00%2C64.00%7C0.00%2C0.00%7C0.00" valueDataType="string"/>
     <item name="layer" value="2" valueDataType="number"/>
   </item>
+  <item UID="360" plugin="AIButton" name="item1" cacheAsBitmap="false" parallaxX="100" parallaxY="100" index="30" family="displayobject">
+    <item name="name" value="item1" valueDataType="string"/>
+    <item name="uiGuid" value="360" valueDataType="string"/>
+    <item name="global" value="false" valueDataType="boolean"/>
+    <item name="visible" value="true" valueDataType="boolean"/>
+    <item name="x" value="-493.99983496452353" valueDataType="number"/>
+    <item name="y" value="548.501338117694" valueDataType="number"/>
+    <item name="anchorX" value="0.5" valueDataType="number"/>
+    <item name="anchorY" value="0.5" valueDataType="number"/>
+    <item name="width" value="64" valueDataType="number"/>
+    <item name="height" value="64" valueDataType="number"/>
+    <item name="angle" value="0" valueDataType="number"/>
+    <item name="alpha" value="1" valueDataType="number"/>
+    <item name="upSkin" value="resource%2FuserAsset%2Fkuang1.png" valueDataType="string"/>
+    <item name="downSkin" value="resource%2FuserAsset%2Fkuang4.png" valueDataType="string"/>
+    <item name="disableSkin" value="resource%2FuserAsset%2Fkuang2.png" valueDataType="string"/>
+    <item name="text" value="%2BHP" valueDataType="string"/>
+    <item name="fontFamily" value="Adobe%20%E9%BB%91%E4%BD%93%20Std%20R" valueDataType="string"/>
+    <item name="size" value="20" valueDataType="number"/>
+    <item name="textColor" value="1052688" valueDataType="number"/>
+    <item name="bold" value="true" valueDataType="boolean"/>
+    <item name="enableInput" value="false" valueDataType="boolean"/>
+    <item name="textAlign" value="center" valueDataType="string"/>
+    <item name="verticalAlign" value="middle" valueDataType="string"/>
+    <item name="maxChars" value="100" valueDataType="number"/>
+    <item name="italic" value="false" valueDataType="boolean"/>
+    <item name="displayAsPassword" value="false" valueDataType="boolean"/>
+    <item name="wordWrap" value="false" valueDataType="boolean"/>
+    <item name="enabled" value="false" valueDataType="boolean"/>
+    <item name="collision" value="true" valueDataType="boolean"/>
+    <item name="collisionData" value="0%2Fn0.00%7C64.00%2C64.00%7C64.00%2C64.00%7C0.00%2C0.00%7C0.00" sourceValue="0%2Fn0.00%7C64.00%2C64.00%7C64.00%2C64.00%7C0.00%2C0.00%7C0.00" valueDataType="string"/>
+    <item name="layer" value="2" valueDataType="number"/>
+  </item>
+  <item UID="363" plugin="AISprite" name="sklHudun" cacheAsBitmap="false" parallaxX="100" parallaxY="100" index="31" family="displayobject">
+    <item name="name" value="sklHudun" valueDataType="string"/>
+    <item name="uiGuid" value="363" valueDataType="string"/>
+    <item name="global" value="false" valueDataType="boolean"/>
+    <item name="visible" value="true" valueDataType="boolean"/>
+    <item name="x" value="-623" valueDataType="number"/>
+    <item name="y" value="157.5" valueDataType="number"/>
+    <item name="anchorX" value="0.5" valueDataType="number"/>
+    <item name="anchorY" value="0.5" valueDataType="number"/>
+    <item name="width" value="230" valueDataType="number"/>
+    <item name="height" value="230" valueDataType="number"/>
+    <item name="angle" value="0" valueDataType="number"/>
+    <item name="alpha" value="1" valueDataType="number"/>
+    <item name="url" value="resource%2FuserAsset%2Fring1.png" valueDataType="string"/>
+    <item name="enabled" value="false" valueDataType="boolean"/>
+    <item name="collision" value="true" valueDataType="boolean"/>
+    <item name="collisionData" value="1%2Fn115%7C115%7C115" sourceValue="1%2Fn115%7C115%7C115" valueDataType="string"/>
+    <item name="layer" value="2" valueDataType="number"/>
+    <item name="behaviors">
+      <item type="behavior" behaviorType="FadeBehavior" name="淡入淡出">
+        <item valueDataType="number" value="1" name="activeAtStartType"/>
+        <item valueDataType="number" value="0" name="fadeInTime"/>
+        <item valueDataType="number" value="0" name="waitTime"/>
+        <item valueDataType="number" value="1" name="fadeOutTime"/>
+        <item valueDataType="number" value="1" name="loopTimes"/>
+        <item valueDataType="number" value="1" name="destoryType"/>
+      </item>
+    </item>
+  </item>
   <item UID="227" plugin="AISprite" name="controldi" cacheAsBitmap="false" parallaxX="0" parallaxY="0" index="0" family="displayobject">
     <item name="name" value="controldi" valueDataType="string"/>
     <item name="uiGuid" value="227" valueDataType="string"/>
@@ -1467,7 +1529,7 @@
     <item name="width" value="40" valueDataType="number"/>
     <item name="height" value="40" valueDataType="number"/>
     <item name="angle" value="0" valueDataType="number"/>
-    <item name="alpha" value="1" valueDataType="number"/>
+    <item name="alpha" value="0.1" valueDataType="number"/>
     <item name="text" value="99" valueDataType="string"/>
     <item name="fontFamily" value="Adobe%20%E9%BB%91%E4%BD%93%20Std%20R" valueDataType="string"/>
     <item name="size" value="20" valueDataType="number"/>
@@ -1503,14 +1565,14 @@
     <item name="y" value="-73.5" valueDataType="number"/>
     <item name="anchorX" value="0.5" valueDataType="number"/>
     <item name="anchorY" value="0.5" valueDataType="number"/>
-    <item name="width" value="120" valueDataType="number"/>
-    <item name="height" value="120" valueDataType="number"/>
+    <item name="width" value="100" valueDataType="number"/>
+    <item name="height" value="100" valueDataType="number"/>
     <item name="angle" value="0" valueDataType="number"/>
     <item name="alpha" value="1" valueDataType="number"/>
-    <item name="url" value="resource%2FuserAsset%2FglowBlack.png" valueDataType="string"/>
+    <item name="url" value="resource%2FuserAsset%2Fsphere0.png" valueDataType="string"/>
     <item name="enabled" value="false" valueDataType="boolean"/>
     <item name="collision" value="false" valueDataType="boolean"/>
-    <item name="collisionData" value="0%2Fn0.00%7C120.00%2C120.00%7C120.00%2C120.00%7C0.00%2C0.00%7C0.00" sourceValue="0%2Fn0.00%7C120.00%2C120.00%7C120.00%2C120.00%7C0.00%2C0.00%7C0.00" valueDataType="string"/>
+    <item name="collisionData" value="0%2Fn0.00%7C100.00%2C100.00%7C100.00%2C100.00%7C0.00%2C0.00%7C0.00" sourceValue="0%2Fn0.00%7C100.00%2C100.00%7C100.00%2C100.00%7C0.00%2C0.00%7C0.00" valueDataType="string"/>
     <item name="layer" value="3" valueDataType="number"/>
     <item name="behaviors">
       <item type="behavior" behaviorType="FadeBehavior" name="淡入淡出">
@@ -1565,7 +1627,7 @@
     <item name="height" value="100" valueDataType="number"/>
     <item name="angle" value="0" valueDataType="number"/>
     <item name="alpha" value="1" valueDataType="number"/>
-    <item name="text" value="%E6%96%87%E6%9C%AC%E6%A1%86" valueDataType="string"/>
+    <item name="text" value="" valueDataType="string"/>
     <item name="fontFamily" value="Adobe%20%E9%BB%91%E4%BD%93%20Std%20R" valueDataType="string"/>
     <item name="size" value="50" valueDataType="number"/>
     <item name="textColor" value="16777215" valueDataType="number"/>

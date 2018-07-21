@@ -68,11 +68,16 @@
     <item initValue="0" variableType="number" variableName="wY" type="variable"/>
     <item initValue="0" variableType="number" variableName="justW" type="variable"/>
     <item initValue="0" variableType="number" variableName="justX" type="variable"/>
+    <item initValue="false" variableType="boolean" variableName="Level1" type="variable"/>
+    <item initValue="false" variableType="boolean" variableName="Level2" type="variable"/>
+    <item initValue="false" variableType="boolean" variableName="Level3" type="variable"/>
     <item type="behavior" behaviorType="TimerBehavior" name="计时器"/>
   </item>
   <item type="variable" variableName="wallWidth" variableType="number" initValue="200"/>
   <item type="variable" variableName="gameTask" variableType="number" initValue="0"/>
   <item type="variable" variableName="gameModel" variableType="number" initValue="1"/>
+  <item type="variable" variableName="isRest" variableType="boolean" initValue="false"/>
+  <item type="variable" variableName="test" variableType="number" initValue="0"/>
   <item type="event" conditionRelationShip="true" triggerOnceWhileTrue="false">
     <item type="condition" callTarget="instance" paramsClass="OnSceneInitCompleteEvent" callName="onSceneInitComplete" isTrigger="true" target="System"/>
     <item type="action" persistent="false" callTarget="instance" callName="pin" target="player01" behaviorName="别针">
@@ -132,16 +137,23 @@
         <item valueDataType="string" value="%22equalTo%22" name="operationType"/>
         <item valueDataType="any" value="1" name="value"/>
       </item>
-      <item type="action" persistent="false" callTarget="instance" callName="setValue" target="System">
-        <item valueDataType="string" value="gameModel" name="10" variable="true"/>
-        <item valueDataType="any" value="1" name="9"/>
-      </item>
       <item type="action" persistent="false" callTarget="instance" callName="callFunction" target="Function">
         <item valueDataType="string" value="%22gameModle%22" name="tag"/>
         <item valueDataType="string" value="%222%22" name="params"/>
       </item>
       <item type="action" persistent="false" callTarget="instance" callName="setText" target="log">
         <item valueDataType="string" value="%22model%3A%22%2BSystem.gameModel%2B%22%20task1%3A%22%2BSystem.gameTask" name="1"/>
+      </item>
+      <item type="event" conditionRelationShip="true" triggerOnceWhileTrue="false">
+        <item type="condition" callTarget="instance" paramsClass="CompareVariableEvent" callName="compareVariable" isTrigger="false" target="System">
+          <item valueDataType="string" value="isRest" name="variable" variable="true"/>
+          <item valueDataType="string" value="%22equalTo%22" name="operationType"/>
+          <item valueDataType="any" value="true" name="value"/>
+        </item>
+        <item type="action" persistent="false" callTarget="instance" callName="setValue" target="System">
+          <item valueDataType="string" value="gameModel" name="10" variable="true"/>
+          <item valueDataType="any" value="1" name="9"/>
+        </item>
       </item>
     </item>
     <item type="event" conditionRelationShip="true" triggerOnceWhileTrue="false">
@@ -174,23 +186,6 @@
       </item>
       <item type="action" persistent="false" callTarget="instance" callName="setText" target="log">
         <item valueDataType="string" value="%22model%3A%22%2BSystem.gameModel%2B%22%20task0%3A%22%2BSystem.gameTask" name="1"/>
-      </item>
-    </item>
-    <item type="event" conditionRelationShip="true" triggerOnceWhileTrue="false">
-      <item type="condition" callTarget="instance" paramsClass="CompareVariableEvent" callName="compareVariable" isTrigger="false" target="System">
-        <item valueDataType="string" value="gameTask" name="variable" variable="true"/>
-        <item valueDataType="string" value="%22equalTo%22" name="operationType"/>
-        <item valueDataType="any" value="0" name="value"/>
-      </item>
-      <item type="condition" callTarget="instance" paramsClass="CompareParameterEvent" callName="compareParameter" isTrigger="false" target="Function">
-        <item valueDataType="string" value="%22setModel%22" name="tag"/>
-        <item valueDataType="number" value="0" name="index"/>
-        <item valueDataType="string" value="%22equalTo%22" name="operationType"/>
-        <item valueDataType="any" value="0" name="value"/>
-      </item>
-      <item type="action" persistent="false" callTarget="instance" callName="addTo" target="System">
-        <item valueDataType="string" value="gameModel" name="14" variable="true"/>
-        <item valueDataType="number" value="1" name="13"/>
       </item>
     </item>
   </item>
@@ -258,7 +253,7 @@
         <item valueDataType="number" value="0" name="10"/>
       </item>
       <item type="action" persistent="false" callTarget="instance" callName="setMaxSpeed" target="player0" behaviorName="横轴跑酷">
-        <item valueDataType="number" value="330" name="maxspeed"/>
+        <item valueDataType="number" value="350" name="maxspeed"/>
       </item>
       <item type="action" persistent="false" callTarget="instance" callName="setJumpStrength" target="player0" behaviorName="横轴跑酷">
         <item valueDataType="number" value="750" name="js"/>
@@ -302,6 +297,17 @@
     </item>
     <item type="action" persistent="false" callTarget="instance" callName="gotoScene" target="System">
       <item valueDataType="string" value="%22MainScene%22" name="18"/>
+    </item>
+    <item type="event" conditionRelationShip="true" triggerOnceWhileTrue="false">
+      <item type="condition" callTarget="instance" paramsClass="CompareInstanceVariableEvent" callName="compareInstanceVariable" isTrigger="false" target="System">
+        <item valueDataType="string" value="gameTask" name="instanceVariable" variable="true"/>
+        <item valueDataType="string" value="%22equalTo%22" name="operationType"/>
+        <item valueDataType="any" value="1" name="value"/>
+      </item>
+      <item type="action" persistent="false" callTarget="instance" callName="setBoolean" target="System">
+        <item valueDataType="string" value="isRest" name="8" variable="true"/>
+        <item valueDataType="number" value="1" name="7"/>
+      </item>
     </item>
   </item>
   <item type="event" conditionRelationShip="true" triggerOnceWhileTrue="false">
@@ -350,62 +356,66 @@
     <item type="condition" callTarget="instance" paramsClass="OnCollisionWithOtherObjectEvent" callName="onCollisionWithOtherObject" isTrigger="true" target="player0">
       <item valueDataType="string" value="AISprite45" name="object" isFamily="false"/>
     </item>
-    <item type="action" persistent="false" callTarget="instance" callName="startTimer" target="AISprite4" behaviorName="计时器">
-      <item valueDataType="number" value="500" name="1"/>
-      <item valueDataType="number" value="1" name="2"/>
-      <item valueDataType="string" value="%22restTime%22" name="3"/>
+    <item type="action" persistent="false" callTarget="instance" callName="setBoolean" target="System">
+      <item valueDataType="string" value="isRest" name="8" variable="true"/>
+      <item valueDataType="number" value="0" name="7"/>
     </item>
-    <item type="action" persistent="false" callTarget="instance" callName="createObject" target="System">
-      <item valueDataType="string" value="screenMask" name="23" isFamily="false"/>
-      <item valueDataType="number" value="3" name="22"/>
-      <item valueDataType="number" value="568" name="21"/>
-      <item valueDataType="number" value="320" name="20"/>
+    <item type="event" conditionRelationShip="true" triggerOnceWhileTrue="false">
+      <item type="condition" callTarget="instance" paramsClass="CompareVariableEvent" callName="compareVariable" isTrigger="false" target="System">
+        <item valueDataType="string" value="gameModel" name="variable" variable="true"/>
+        <item valueDataType="string" value="%22equalTo%22" name="operationType"/>
+        <item valueDataType="any" value="1" name="value"/>
+      </item>
+      <item type="action" persistent="false" callTarget="instance" callName="setBoolean" target="AISprite4">
+        <item valueDataType="string" value="Level1" name="10" variable="true"/>
+        <item valueDataType="number" value="1" name="11"/>
+      </item>
     </item>
-    <item type="action" persistent="false" callTarget="instance" callName="setFadeInTime" target="screenMask" behaviorName="淡入淡出">
-      <item valueDataType="number" value="0.5" name="1"/>
+    <item type="event" conditionRelationShip="true" triggerOnceWhileTrue="false">
+      <item type="condition" callTarget="instance" paramsClass="CompareVariableEvent" callName="compareVariable" isTrigger="false" target="System">
+        <item valueDataType="string" value="gameModel" name="variable" variable="true"/>
+        <item valueDataType="string" value="%22equalTo%22" name="operationType"/>
+        <item valueDataType="any" value="2" name="value"/>
+      </item>
+      <item type="action" persistent="false" callTarget="instance" callName="setBoolean" target="AISprite4">
+        <item valueDataType="string" value="Level2" name="10" variable="true"/>
+        <item valueDataType="number" value="1" name="11"/>
+      </item>
     </item>
-    <item type="action" persistent="false" callTarget="instance" callName="setWaitTime" target="screenMask" behaviorName="淡入淡出">
-      <item valueDataType="number" value="1" name="2"/>
+    <item type="event" conditionRelationShip="true" triggerOnceWhileTrue="false">
+      <item type="condition" callTarget="instance" paramsClass="CompareVariableEvent" callName="compareVariable" isTrigger="false" target="System">
+        <item valueDataType="string" value="gameModel" name="variable" variable="true"/>
+        <item valueDataType="string" value="%22equalTo%22" name="operationType"/>
+        <item valueDataType="any" value="3" name="value"/>
+      </item>
+      <item type="action" persistent="false" callTarget="instance" callName="setBoolean" target="AISprite4">
+        <item valueDataType="string" value="Level3" name="10" variable="true"/>
+        <item valueDataType="number" value="1" name="11"/>
+      </item>
     </item>
-    <item type="action" persistent="false" callTarget="instance" callName="setFadeOutTime" target="screenMask" behaviorName="淡入淡出">
-      <item valueDataType="number" value="1" name="3"/>
+    <item type="event" conditionRelationShip="true" triggerOnceWhileTrue="false">
+      <item type="condition" callTarget="instance" paramsClass="CompareVariableEvent" callName="compareVariable" isTrigger="false" target="System">
+        <item valueDataType="string" value="gameTask" name="variable" variable="true"/>
+        <item valueDataType="string" value="%22lessThan%22" name="operationType"/>
+        <item valueDataType="any" value="2" name="value"/>
+      </item>
+      <item type="action" persistent="false" callTarget="instance" callName="addTo" target="System">
+        <item valueDataType="string" value="gameModel" name="14" variable="true"/>
+        <item valueDataType="number" value="1" name="13"/>
+      </item>
+      <item type="action" persistent="false" callTarget="instance" callName="gotoScene" target="System">
+        <item valueDataType="string" value="%22MainScene%22" name="18"/>
+      </item>
     </item>
-    <item type="action" persistent="false" callTarget="instance" callName="setBoolean" target="player0">
-      <item valueDataType="string" value="isGO" name="10" variable="true"/>
-      <item valueDataType="number" value="0" name="11"/>
-    </item>
-    <item type="action" persistent="false" callTarget="instance" callName="createObject" target="System">
-      <item valueDataType="string" value="Title" name="23" isFamily="false"/>
-      <item valueDataType="number" value="3" name="22"/>
-      <item valueDataType="number" value="568" name="21"/>
-      <item valueDataType="number" value="320" name="20"/>
-    </item>
-    <item type="action" persistent="false" callTarget="instance" callName="callFunction" target="Function">
-      <item valueDataType="string" value="%22setModel%22" name="tag"/>
-      <item valueDataType="string" value="%220%22" name="params"/>
-    </item>
-  </item>
-  <item type="event" conditionRelationShip="true" triggerOnceWhileTrue="false">
-    <item type="condition" callTarget="instance" paramsClass="TimerOnTimerCompleteEvent" callName="onTimerComplete" isTrigger="true" target="AISprite4" behaviorName="计时器">
-      <item valueDataType="string" value="%22restTime%22" name="tag"/>
-    </item>
-    <item type="action" persistent="false" callTarget="instance" callName="setPosition" target="player0">
-      <item valueDataType="number" value="200" name="16"/>
-      <item valueDataType="number" value="450" name="17"/>
-    </item>
-    <item type="action" persistent="false" callTarget="instance" callName="createObject" target="System">
-      <item valueDataType="string" value="wall" name="23" isFamily="false"/>
-      <item valueDataType="number" value="1" name="22"/>
-      <item valueDataType="number" value="200" name="21"/>
-      <item valueDataType="number" value="500" name="20"/>
-    </item>
-    <item type="action" persistent="false" callTarget="instance" callName="setBoolean" target="player0">
-      <item valueDataType="string" value="isNext" name="10" variable="true"/>
-      <item valueDataType="number" value="1" name="11"/>
-    </item>
-    <item type="action" persistent="false" callTarget="instance" callName="setBoolean" target="player0">
-      <item valueDataType="string" value="isGO" name="10" variable="true"/>
-      <item valueDataType="number" value="1" name="11"/>
+    <item type="event" conditionRelationShip="true" triggerOnceWhileTrue="false">
+      <item type="condition" callTarget="instance" paramsClass="CompareVariableEvent" callName="compareVariable" isTrigger="false" target="System">
+        <item valueDataType="string" value="gameTask" name="variable" variable="true"/>
+        <item valueDataType="string" value="%22equalTo%22" name="operationType"/>
+        <item valueDataType="any" value="2" name="value"/>
+      </item>
+      <item type="action" persistent="false" callTarget="instance" callName="gotoScene" target="System">
+        <item valueDataType="string" value="%22MainScene%22" name="18"/>
+      </item>
     </item>
   </item>
   <item type="event" conditionRelationShip="true" triggerOnceWhileTrue="false">
@@ -598,6 +608,9 @@
       <item valueDataType="string" value="%22equalTo%22" name="operationType"/>
       <item valueDataType="any" value="2" name="value"/>
     </item>
+    <item type="action" persistent="false" callTarget="instance" callName="wait" target="System">
+      <item valueDataType="number" value="1" name="time"/>
+    </item>
     <item type="action" persistent="false" callTarget="instance" callName="simulateControl" target="player0" behaviorName="横轴跑酷">
       <item valueDataType="number" value="1" name="ctrl"/>
     </item>
@@ -637,6 +650,40 @@
     <item type="action" persistent="false" callTarget="instance" callName="addTo" target="System">
       <item valueDataType="string" value="gameModel" name="14" variable="true"/>
       <item valueDataType="number" value="1" name="13"/>
+    </item>
+  </item>
+  <item type="event" conditionRelationShip="true" triggerOnceWhileTrue="false">
+    <item type="condition" callTarget="instance" paramsClass="OnKeyDownEvent" callName="onkeyDown" isTrigger="true" target="Keyboard">
+      <item valueDataType="number" value="66" name="key"/>
+    </item>
+    <item type="action" persistent="false" callTarget="instance" callName="addTo" target="System">
+      <item valueDataType="string" value="gameTask" name="14" variable="true"/>
+      <item valueDataType="number" value="1" name="13"/>
+    </item>
+  </item>
+  <item type="event" conditionRelationShip="true" triggerOnceWhileTrue="false">
+    <item type="condition" callTarget="instance" paramsClass="CompareInstanceVariableEvent" callName="compareInstanceVariable" isTrigger="false" target="AISprite4">
+      <item valueDataType="string" value="Level1" name="instanceVariable" variable="true"/>
+      <item valueDataType="string" value="%22equalTo%22" name="operationType"/>
+      <item valueDataType="any" value="true" name="value"/>
+    </item>
+    <item type="condition" callTarget="instance" paramsClass="CompareInstanceVariableEvent" callName="compareInstanceVariable" isTrigger="false" target="AISprite4">
+      <item valueDataType="string" value="Level2" name="instanceVariable" variable="true"/>
+      <item valueDataType="string" value="%22equalTo%22" name="operationType"/>
+      <item valueDataType="any" value="true" name="value"/>
+    </item>
+    <item type="condition" callTarget="instance" paramsClass="CompareInstanceVariableEvent" callName="compareInstanceVariable" isTrigger="false" target="AISprite4">
+      <item valueDataType="string" value="Level3" name="instanceVariable" variable="true"/>
+      <item valueDataType="string" value="%22equalTo%22" name="operationType"/>
+      <item valueDataType="any" value="true" name="value"/>
+    </item>
+    <item type="action" persistent="false" callTarget="instance" callName="setValue" target="System">
+      <item valueDataType="string" value="gameModel" name="10" variable="true"/>
+      <item valueDataType="any" value="4" name="9"/>
+    </item>
+    <item type="action" persistent="false" callTarget="instance" callName="setBoolean" target="AISprite4">
+      <item valueDataType="string" value="Level3" name="10" variable="true"/>
+      <item valueDataType="number" value="0" name="11"/>
     </item>
   </item>
 </eventSheets>

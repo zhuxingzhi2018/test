@@ -1,5 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <eventSheets layout="StartScene" previous="" next="" version="2.2">
+  <item type="instance" UID="372"/>
+  <item type="instance" UID="369">
+    <item type="behavior" behaviorType="FadeBehavior" name="淡入淡出">
+      <item valueDataType="number" value="0" name="activeAtStartType"/>
+      <item valueDataType="number" value="0.5" name="fadeInTime"/>
+      <item valueDataType="number" value="1" name="waitTime"/>
+      <item valueDataType="number" value="0.5" name="fadeOutTime"/>
+      <item valueDataType="number" value="1" name="loopTimes"/>
+      <item valueDataType="number" value="1" name="destoryType"/>
+    </item>
+  </item>
+  <item type="instance" UID="366">
+    <item type="behavior" behaviorType="FadeBehavior" name="淡入淡出">
+      <item valueDataType="number" value="0" name="activeAtStartType"/>
+      <item valueDataType="number" value="0.5" name="fadeInTime"/>
+      <item valueDataType="number" value="2" name="waitTime"/>
+      <item valueDataType="number" value="1" name="fadeOutTime"/>
+      <item valueDataType="number" value="1" name="loopTimes"/>
+      <item valueDataType="number" value="1" name="destoryType"/>
+    </item>
+  </item>
   <item type="instance" UID="160"/>
   <item type="instance" UID="74"/>
   <item type="instance" UID="155"/>
@@ -22,9 +43,28 @@
   <item type="variable" variableName="wallWidth" variableType="number" initValue="200"/>
   <item type="variable" variableName="gameTask" variableType="number" initValue="0"/>
   <item type="variable" variableName="gameModel" variableType="number" initValue="1"/>
+  <item type="variable" variableName="isRest" variableType="boolean" initValue="false"/>
+  <item type="variable" variableName="test" variableType="number" initValue="0"/>
   <item type="event" conditionRelationShip="true" triggerOnceWhileTrue="false">
     <item type="condition" callTarget="instance" paramsClass="OnButtonBeginEvent" callName="onButtonBegin" isTrigger="true" target="AITextField73"/>
     <item type="condition" callTarget="instance" paramsClass="OnButtonBeginEvent" callName="onButtonBegin" isTrigger="true" target="AITextField159" operatorType="1"/>
+    <item type="action" persistent="false" callTarget="instance" callName="setVisible" target="cheng">
+      <item valueDataType="number" value="1" name="10"/>
+    </item>
+    <item type="action" persistent="false" callTarget="instance" callName="setVisible" target="storyMask">
+      <item valueDataType="number" value="1" name="10"/>
+    </item>
+    <item type="action" persistent="false" callTarget="instance" callName="setVisible" target="storyText">
+      <item valueDataType="number" value="1" name="10"/>
+    </item>
+    <item type="action" persistent="false" callTarget="instance" callName="startFade" target="storyText" behaviorName="淡入淡出"/>
+    <item type="action" persistent="false" callTarget="instance" callName="startFade" target="storyMask" behaviorName="淡入淡出"/>
+    <item type="action" persistent="false" callTarget="instance" callName="setText" target="cheng">
+      <item valueDataType="string" value="%22%E7%AC%AC%22%2BSystem.test%2B%22%E5%B1%82%22" name="1"/>
+    </item>
+    <item type="action" persistent="false" callTarget="instance" callName="wait" target="System">
+      <item valueDataType="number" value="2.5" name="time"/>
+    </item>
     <item type="action" persistent="false" callTarget="instance" callName="gotoScene" target="System">
       <item valueDataType="string" value="%22MainScene%22" name="18"/>
     </item>
@@ -42,6 +82,19 @@
   </item>
   <item type="event" conditionRelationShip="true" triggerOnceWhileTrue="false">
     <item type="condition" callTarget="instance" paramsClass="OnSceneInitCompleteEvent" callName="onSceneInitComplete" isTrigger="true" target="System"/>
+    <item type="action" persistent="false" callTarget="instance" callName="setVisible" target="storyText">
+      <item valueDataType="number" value="0" name="10"/>
+    </item>
+    <item type="action" persistent="false" callTarget="instance" callName="setVisible" target="storyMask">
+      <item valueDataType="number" value="0" name="10"/>
+    </item>
+    <item type="action" persistent="false" callTarget="instance" callName="setVisible" target="cheng">
+      <item valueDataType="number" value="0" name="10"/>
+    </item>
+    <item type="action" persistent="false" callTarget="instance" callName="addTo" target="System">
+      <item valueDataType="string" value="test" name="14" variable="true"/>
+      <item valueDataType="number" value="1" name="13"/>
+    </item>
     <item type="event" conditionRelationShip="true" triggerOnceWhileTrue="false">
       <item type="condition" callTarget="instance" paramsClass="CompareVariableEvent" callName="compareVariable" isTrigger="false" target="System">
         <item valueDataType="string" value="gameTask" name="variable" variable="true"/>
@@ -50,7 +103,7 @@
       </item>
       <item type="action" persistent="false" callTarget="instance" callName="setValue" target="System">
         <item valueDataType="string" value="gameTask" name="10" variable="true"/>
-        <item valueDataType="any" value="2" name="9"/>
+        <item valueDataType="any" value="0" name="9"/>
       </item>
     </item>
   </item>
