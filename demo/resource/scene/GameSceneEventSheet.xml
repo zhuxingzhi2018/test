@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <eventSheets layout="GameScene" previous="" next="" version="2.2">
-  <item type="instance" UID="136"/>
   <item type="instance" UID="131"/>
   <item type="instance" UID="125">
     <item type="behavior" behaviorType="FadeBehavior" name="淡入淡出">
@@ -251,6 +250,7 @@
   <item type="instance" UID="122"/>
   <item type="instance" UID="42"/>
   <item type="instance" UID="40"/>
+  <item type="instance" UID="38"/>
   <item type="instance" UID="36"/>
   <item type="variable" variableName="Score" variableType="number" initValue="0"/>
   <item type="variable" variableName="isWIN" variableType="boolean" initValue="false"/>
@@ -833,7 +833,7 @@
   </item>
   <item type="event" conditionRelationShip="true" triggerOnceWhileTrue="false">
     <item type="condition" callTarget="instance" paramsClass="EveryXSecondsEvent" callName="everyXSecondEvent" isTrigger="false" target="System">
-      <item valueDataType="number" value="0.2" name="interval"/>
+      <item valueDataType="number" value="0.25" name="interval"/>
     </item>
     <item type="condition" callTarget="instance" paramsClass="CompareInstanceVariableEvent" callName="compareInstanceVariable" isTrigger="false" target="BOSS">
       <item valueDataType="string" value="isDie" name="instanceVariable" variable="true"/>
@@ -1021,6 +1021,9 @@
       </item>
       <item type="action" persistent="false" callTarget="instance" callName="setAngleOfMotion" target="bulletE0" behaviorName="子弹行为">
         <item valueDataType="number" value="(10%2B5*(BOSS.zdNum%252))*ls.getloopIndex(%22i%22)%2B(180-(45%2B5*(BOSS.zdNum%252)))-90" name="3"/>
+      </item>
+      <item type="action" persistent="false" callTarget="instance" callName="setSpeed" target="bulletE0" behaviorName="子弹行为">
+        <item valueDataType="number" value="250" name="1"/>
       </item>
     </item>
   </item>
