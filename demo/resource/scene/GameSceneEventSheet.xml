@@ -240,6 +240,7 @@
     <item initValue="0" variableType="number" variableName="sNum" type="variable"/>
     <item initValue="0" variableType="number" variableName="model" type="variable"/>
     <item initValue="0" variableType="number" variableName="cNum1" type="variable"/>
+    <item initValue="false" variableType="boolean" variableName="isStart" type="variable"/>
     <item type="behavior" behaviorType="ScrollBehaivor" name="滚屏行为">
       <item valueDataType="number" value="1" name="active"/>
       <item valueDataType="string" value="%22scrollDown%22" name="scrollDirectionType"/>
@@ -298,6 +299,13 @@
       <item valueDataType="boolean" value="false" name="inner"/>
       <item valueDataType="boolean" value="false" name="knockout"/>
     </item>
+    <item type="action" persistent="false" callTarget="instance" callName="wait" target="System">
+      <item valueDataType="number" value="1" name="time"/>
+    </item>
+    <item type="action" persistent="false" callTarget="instance" callName="setBoolean" target="bg">
+      <item valueDataType="string" value="isStart" name="10" variable="true"/>
+      <item valueDataType="number" value="1" name="11"/>
+    </item>
   </item>
   <item type="event" conditionRelationShip="true" triggerOnceWhileTrue="false">
     <item type="condition" callTarget="instance" paramsClass="CompareInstanceVariableEvent" callName="compareInstanceVariable" isTrigger="false" target="player">
@@ -307,6 +315,10 @@
     </item>
     <item type="condition" callTarget="instance" paramsClass="EveryXSecondsEvent" callName="everyXSecondEvent" isTrigger="false" target="System">
       <item valueDataType="number" value="player.atkTime" name="interval"/>
+    </item>
+    <item type="action" persistent="false" callTarget="instance" callName="play" target="SoundAtk">
+      <item valueDataType="number" value="1" name="2"/>
+      <item valueDataType="number" value="0.8" name="3"/>
     </item>
     <item type="event" conditionRelationShip="true" triggerOnceWhileTrue="false">
       <item type="condition" callTarget="instance" paramsClass="ForEvent" callName="execFor" isTrigger="false" target="System" loop="true">
@@ -445,6 +457,10 @@
     <item type="action" persistent="false" callTarget="instance" callName="setAlpha" target="player">
       <item valueDataType="number" value="0.2" name="10"/>
     </item>
+    <item type="action" persistent="false" callTarget="instance" callName="play" target="SoundDie">
+      <item valueDataType="number" value="1" name="2"/>
+      <item valueDataType="number" value="1" name="3"/>
+    </item>
   </item>
   <item type="event" conditionRelationShip="true" triggerOnceWhileTrue="false">
     <item type="condition" callTarget="instance" paramsClass="OnAllPlayCompleteEvent" callName="onAllPlayComplete" isTrigger="true" target="fxBoom"/>
@@ -578,6 +594,14 @@
         <item valueDataType="string" value="%22lessThan%22" name="operationType"/>
         <item valueDataType="any" value="4" name="value"/>
       </item>
+      <item type="action" persistent="false" callTarget="instance" callName="play" target="soundDie2">
+        <item valueDataType="number" value="1" name="2"/>
+        <item valueDataType="number" value="1" name="3"/>
+      </item>
+      <item type="action" persistent="false" callTarget="instance" callName="play" target="SoundDie">
+        <item valueDataType="number" value="1" name="2"/>
+        <item valueDataType="number" value="1" name="3"/>
+      </item>
       <item type="action" persistent="false" callTarget="instance" callName="createObject" target="System">
         <item valueDataType="string" value="fxBoom" name="23" isFamily="false"/>
         <item valueDataType="number" value="2" name="22"/>
@@ -615,6 +639,10 @@
     <item type="action" persistent="false" callTarget="instance" callName="setText" target="log">
       <item valueDataType="string" value="%22cNum1%3A%22%2Bbg.cNum1" name="1"/>
     </item>
+    <item type="action" persistent="false" callTarget="instance" callName="play" target="soundDie2">
+      <item valueDataType="number" value="1" name="2"/>
+      <item valueDataType="number" value="1" name="3"/>
+    </item>
   </item>
   <item type="event" conditionRelationShip="true" triggerOnceWhileTrue="false">
     <item type="condition" callTarget="instance" paramsClass="OnCollisionWithOtherObjectEvent" callName="onCollisionWithOtherObject" isTrigger="true" target="BulletP0">
@@ -642,6 +670,10 @@
     <item type="action" persistent="false" callTarget="instance" callName="setText" target="log">
       <item valueDataType="string" value="%22%22%2Bbg.eNumber" name="1"/>
     </item>
+    <item type="action" persistent="false" callTarget="instance" callName="play" target="soundDie2">
+      <item valueDataType="number" value="1" name="2"/>
+      <item valueDataType="number" value="1" name="3"/>
+    </item>
   </item>
   <item type="event" conditionRelationShip="true" triggerOnceWhileTrue="false">
     <item type="condition" callTarget="instance" paramsClass="OnDestoryEvent" callName="onDestory" isTrigger="true" target="enemy"/>
@@ -651,6 +683,10 @@
     </item>
     <item type="action" persistent="false" callTarget="instance" callName="setText" target="log">
       <item valueDataType="string" value="%22%22%2Bbg.eNumber" name="1"/>
+    </item>
+    <item type="action" persistent="false" callTarget="instance" callName="play" target="soundDie2">
+      <item valueDataType="number" value="1" name="2"/>
+      <item valueDataType="number" value="1" name="3"/>
     </item>
   </item>
   <item type="event" conditionRelationShip="true" triggerOnceWhileTrue="false">
@@ -1277,6 +1313,11 @@
       <item valueDataType="string" value="%22lessThan%22" name="operationType"/>
       <item valueDataType="any" value="7" name="value"/>
     </item>
+    <item type="condition" callTarget="instance" paramsClass="CompareInstanceVariableEvent" callName="compareInstanceVariable" isTrigger="false" target="bg">
+      <item valueDataType="string" value="isStart" name="instanceVariable" variable="true"/>
+      <item valueDataType="string" value="%22equalTo%22" name="operationType"/>
+      <item valueDataType="any" value="true" name="value"/>
+    </item>
     <item type="action" persistent="false" callTarget="instance" callName="createObject" target="System">
       <item valueDataType="string" value="enemy0" name="23" isFamily="false"/>
       <item valueDataType="number" value="2" name="22"/>
@@ -1326,7 +1367,7 @@
       </item>
       <item type="action" persistent="false" callTarget="instance" callName="setValue" target="enemy">
         <item valueDataType="string" value="HP" name="10" variable="true"/>
-        <item valueDataType="any" value="2%2B2*gameMesger.boshu" name="11"/>
+        <item valueDataType="any" value="1%2B2*gameMesger.boshu" name="11"/>
       </item>
       <item type="action" persistent="false" callTarget="instance" callName="addTo" target="gameMesger">
         <item valueDataType="string" value="cIndex" name="10" variable="true"/>
@@ -1350,6 +1391,11 @@
       <item valueDataType="string" value="boshu" name="instanceVariable" variable="true"/>
       <item valueDataType="string" value="%22lessThan%22" name="operationType"/>
       <item valueDataType="any" value="7" name="value"/>
+    </item>
+    <item type="condition" callTarget="instance" paramsClass="CompareInstanceVariableEvent" callName="compareInstanceVariable" isTrigger="false" target="bg">
+      <item valueDataType="string" value="isStart" name="instanceVariable" variable="true"/>
+      <item valueDataType="string" value="%22equalTo%22" name="operationType"/>
+      <item valueDataType="any" value="true" name="value"/>
     </item>
     <item type="action" persistent="false" callTarget="instance" callName="callFunction" target="Function">
       <item valueDataType="string" value="%22createEnemy%22" name="tag"/>

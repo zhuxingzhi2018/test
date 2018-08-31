@@ -724,7 +724,7 @@
     <item name="name" value="mask" valueDataType="string"/>
     <item name="uiGuid" value="125" valueDataType="string"/>
     <item name="global" value="false" valueDataType="boolean"/>
-    <item name="visible" value="false" valueDataType="boolean"/>
+    <item name="visible" value="true" valueDataType="boolean"/>
     <item name="x" value="255.5" valueDataType="number"/>
     <item name="y" value="381" valueDataType="number"/>
     <item name="anchorX" value="0.5" valueDataType="number"/>

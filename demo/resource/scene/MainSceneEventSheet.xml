@@ -51,6 +51,10 @@
       <item valueDataType="number" value="1" name="scaleX"/>
       <item valueDataType="number" value="1" name="scaleY"/>
     </item>
+    <item type="action" persistent="false" callTarget="instance" callName="setBoolean" target="System">
+      <item valueDataType="string" value="isWIN" name="8" variable="true"/>
+      <item valueDataType="number" value="0" name="7"/>
+    </item>
   </item>
   <item type="event" conditionRelationShip="true" triggerOnceWhileTrue="false">
     <item type="condition" callTarget="instance" paramsClass="OnButtonBeginEvent" callName="onButtonBegin" isTrigger="true" target="BtnStart"/>

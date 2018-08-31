@@ -104,5 +104,11 @@
     <item type="action" persistent="false" callTarget="instance" callName="setVisible" target="AITextField127">
       <item valueDataType="number" value="1" name="10"/>
     </item>
+    <item type="action" persistent="false" callTarget="instance" callName="wait" target="System">
+      <item valueDataType="number" value="2" name="time"/>
+    </item>
+    <item type="action" persistent="false" callTarget="instance" callName="gotoScene" target="System">
+      <item valueDataType="string" value="%22MainScene%22" name="18"/>
+    </item>
   </item>
 </eventSheets>
