@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <eventSheets layout="GameScene" previous="" next="" version="2.2">
+  <item type="instance" UID="136"/>
   <item type="instance" UID="131"/>
   <item type="instance" UID="125">
     <item type="behavior" behaviorType="FadeBehavior" name="淡入淡出">
@@ -250,7 +251,6 @@
   <item type="instance" UID="122"/>
   <item type="instance" UID="42"/>
   <item type="instance" UID="40"/>
-  <item type="instance" UID="38"/>
   <item type="instance" UID="36"/>
   <item type="variable" variableName="Score" variableType="number" initValue="0"/>
   <item type="variable" variableName="isWIN" variableType="boolean" initValue="false"/>

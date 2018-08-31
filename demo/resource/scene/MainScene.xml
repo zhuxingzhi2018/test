@@ -34,7 +34,7 @@
     <item name="height" value="80" valueDataType="number"/>
     <item name="angle" value="0" valueDataType="number"/>
     <item name="alpha" value="0.1" valueDataType="number"/>
-    <item name="text" value="%E6%AD%BC%2020%20%E5%8F%8D%20%E5%87%BB" valueDataType="string"/>
+    <item name="text" value="%E6%AD%BC%20%E5%8D%81%20%E5%87%BA%20%E5%87%BB" valueDataType="string"/>
     <item name="fontFamily" value="Adobe%20%E9%BB%91%E4%BD%93%20Std%20R" valueDataType="string"/>
     <item name="size" value="50" valueDataType="number"/>
     <item name="textColor" value="16777215" valueDataType="number"/>

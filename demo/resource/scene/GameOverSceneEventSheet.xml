@@ -104,6 +104,9 @@
     <item type="action" persistent="false" callTarget="instance" callName="setVisible" target="AITextField127">
       <item valueDataType="number" value="1" name="10"/>
     </item>
+    <item type="action" persistent="false" callTarget="instance" callName="setAlpha" target="AITextField127">
+      <item valueDataType="number" value="1" name="10"/>
+    </item>
     <item type="action" persistent="false" callTarget="instance" callName="wait" target="System">
       <item valueDataType="number" value="2" name="time"/>
     </item>

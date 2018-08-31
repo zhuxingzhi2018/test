@@ -20,23 +20,7 @@
     <item name="playOnStart" value="false" valueDataType="boolean"/>
     <item name="layer" value="0" valueDataType="number"/>
   </item>
-  <item UID="38" plugin="AIAudio" name="Bgm1" cacheAsBitmap="false" parallaxX="100" parallaxY="100" index="1" family="">
-    <item name="name" value="Bgm1" valueDataType="string"/>
-    <item name="uiGuid" value="38" valueDataType="string"/>
-    <item name="global" value="false" valueDataType="boolean"/>
-    <item name="visible" value="true" valueDataType="boolean"/>
-    <item name="x" value="588.5144681610844" valueDataType="number"/>
-    <item name="y" value="236.14266073329213" valueDataType="number"/>
-    <item name="width" value="30" valueDataType="number"/>
-    <item name="height" value="30" valueDataType="number"/>
-    <item name="alpha" value="1" valueDataType="number"/>
-    <item name="url" value="resource%2FuserAsset%2Fsound%2Fbackground.mp3" valueDataType="string"/>
-    <item name="loop" value="0" valueDataType="number"/>
-    <item name="volume" value="1" valueDataType="number"/>
-    <item name="playOnStart" value="true" valueDataType="boolean"/>
-    <item name="layer" value="0" valueDataType="number"/>
-  </item>
-  <item UID="40" plugin="AIAudio" name="soundDie2" cacheAsBitmap="false" parallaxX="100" parallaxY="100" index="2" family="">
+  <item UID="40" plugin="AIAudio" name="soundDie2" cacheAsBitmap="false" parallaxX="100" parallaxY="100" index="1" family="">
     <item name="name" value="soundDie2" valueDataType="string"/>
     <item name="uiGuid" value="40" valueDataType="string"/>
     <item name="global" value="false" valueDataType="boolean"/>
@@ -52,7 +36,7 @@
     <item name="playOnStart" value="false" valueDataType="boolean"/>
     <item name="layer" value="0" valueDataType="number"/>
   </item>
-  <item UID="42" plugin="AIAudio" name="SoundDie" cacheAsBitmap="false" parallaxX="100" parallaxY="100" index="3" family="">
+  <item UID="42" plugin="AIAudio" name="SoundDie" cacheAsBitmap="false" parallaxX="100" parallaxY="100" index="2" family="">
     <item name="name" value="SoundDie" valueDataType="string"/>
     <item name="uiGuid" value="42" valueDataType="string"/>
     <item name="global" value="false" valueDataType="boolean"/>
@@ -68,7 +52,7 @@
     <item name="playOnStart" value="false" valueDataType="boolean"/>
     <item name="layer" value="0" valueDataType="number"/>
   </item>
-  <item UID="122" plugin="AISprite" name="AISprite121" cacheAsBitmap="false" parallaxX="100" parallaxY="100" index="4" family="displayobject">
+  <item UID="122" plugin="AISprite" name="AISprite121" cacheAsBitmap="false" parallaxX="100" parallaxY="100" index="3" family="displayobject">
     <item name="name" value="AISprite121" valueDataType="string"/>
     <item name="uiGuid" value="122" valueDataType="string"/>
     <item name="global" value="false" valueDataType="boolean"/>
@@ -87,7 +71,7 @@
     <item name="collisionData" value="0%2Fn0.00%7C768.00%2C512.00%7C768.00%2C512.00%7C0.00%2C0.00%7C0.00" sourceValue="0%2Fn0.00%7C768.00%2C512.00%7C768.00%2C512.00%7C0.00%2C0.00%7C0.00" valueDataType="string"/>
     <item name="layer" value="0" valueDataType="number"/>
   </item>
-  <item UID="18" plugin="AISprite" name="bg" cacheAsBitmap="false" parallaxX="100" parallaxY="100" index="5" family="displayobject">
+  <item UID="18" plugin="AISprite" name="bg" cacheAsBitmap="false" parallaxX="100" parallaxY="100" index="4" family="displayobject">
     <item name="name" value="bg" valueDataType="string"/>
     <item name="uiGuid" value="18" valueDataType="string"/>
     <item name="global" value="false" valueDataType="boolean"/>
@@ -766,6 +750,22 @@
     <item name="enabled" value="true" valueDataType="boolean"/>
     <item name="collision" value="false" valueDataType="boolean"/>
     <item name="collisionData" value="0%2Fn0.00%7C762.00%2C511.00%7C762.00%2C511.00%7C0.00%2C0.00%7C0.00" sourceValue="0%2Fn0.00%7C762.00%2C511.00%7C762.00%2C511.00%7C0.00%2C0.00%7C0.00" valueDataType="string"/>
+    <item name="layer" value="3" valueDataType="number"/>
+  </item>
+  <item UID="136" plugin="AIAudio" name="bgm" cacheAsBitmap="false" parallaxX="100" parallaxY="100" index="7" family="">
+    <item name="name" value="bgm" valueDataType="string"/>
+    <item name="uiGuid" value="136" valueDataType="string"/>
+    <item name="global" value="false" valueDataType="boolean"/>
+    <item name="visible" value="true" valueDataType="boolean"/>
+    <item name="x" value="588.5" valueDataType="number"/>
+    <item name="y" value="225.5" valueDataType="number"/>
+    <item name="width" value="30" valueDataType="number"/>
+    <item name="height" value="30" valueDataType="number"/>
+    <item name="alpha" value="1" valueDataType="number"/>
+    <item name="url" value="resource%2FuserAsset%2Fsound%2Fbackground.mp3" valueDataType="string"/>
+    <item name="loop" value="0" valueDataType="number"/>
+    <item name="volume" value="1" valueDataType="number"/>
+    <item name="playOnStart" value="true" valueDataType="boolean"/>
     <item name="layer" value="3" valueDataType="number"/>
   </item>
 </layout>

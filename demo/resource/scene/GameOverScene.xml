@@ -90,7 +90,7 @@
     <item name="width" value="300" valueDataType="number"/>
     <item name="height" value="100" valueDataType="number"/>
     <item name="angle" value="0" valueDataType="number"/>
-    <item name="alpha" value="1" valueDataType="number"/>
+    <item name="alpha" value="0" valueDataType="number"/>
     <item name="text" value="%E6%81%AD%E5%96%9C%E6%82%A8%E9%80%9A%E5%85%B3%EF%BC%81" valueDataType="string"/>
     <item name="fontFamily" value="%E5%BE%AE%E8%BD%AF%E9%9B%85%E9%BB%91" valueDataType="string"/>
     <item name="size" value="50" valueDataType="number"/>
