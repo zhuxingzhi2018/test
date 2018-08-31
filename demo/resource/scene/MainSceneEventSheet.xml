@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<eventSheets layout="MainScene" previous="" next="" version="2.2">
+  <item type="instance" UID="93"/>
+  <item type="instance" UID="90"/>
+  <item type="instance" UID="6"/>
+  <item type="variable" variableName="Score" variableType="number" initValue="0"/>
+  <item type="variable" variableName="isWIN" variableType="boolean" initValue="false"/>
+  <item type="event" conditionRelationShip="true" triggerOnceWhileTrue="false">
+    <item type="condition" callTarget="instance" paramsClass="OnSceneInitCompleteEvent" callName="onSceneInitComplete" isTrigger="true" target="System"/>
+    <item type="action" persistent="false" callTarget="instance" callName="addGlowFilter" target="Title">
+      <item valueDataType="number" value="15217442" name="color"/>
+      <item valueDataType="number" value="1" name="alpha"/>
+      <item valueDataType="number" value="10" name="blurX"/>
+      <item valueDataType="number" value="10" name="blurY"/>
+      <item valueDataType="number" value="3" name="strength"/>
+      <item valueDataType="number" value="1" name="quality"/>
+      <item valueDataType="boolean" value="false" name="inner"/>
+      <item valueDataType="boolean" value="false" name="knockout"/>
+    </item>
+    <item type="action" persistent="true" callTarget="instance" callName="execTween" target="BtnStart">
+      <item valueDataType="string" value="%22tweenIn%22" name="key"/>
+      <item valueDataType="number" value="255" name="x"/>
+      <item valueDataType="number" value="600" name="y"/>
+      <item valueDataType="number" value="" name="anchorX"/>
+      <item valueDataType="number" value="" name="anchorY"/>
+      <item valueDataType="number" value="" name="width"/>
+      <item valueDataType="number" value="" name="height"/>
+      <item valueDataType="number" value="360" name="rotation"/>
+      <item valueDataType="number" value="" name="alpha"/>
+      <item valueDataType="number" value="1000" name="duration"/>
+      <item valueDataType="string" value="%22elasticOut%22" name="ease"/>
+      <item valueDataType="number" value="0" name="waitTime"/>
+      <item valueDataType="number" value="0" name="loop"/>
+      <item valueDataType="number" value="1" name="scaleX"/>
+      <item valueDataType="number" value="1" name="scaleY"/>
+    </item>
+    <item type="action" persistent="true" callTarget="instance" callName="execTween" target="Title">
+      <item valueDataType="string" value="%22TitleIn%22" name="key"/>
+      <item valueDataType="number" value="255" name="x"/>
+      <item valueDataType="number" value="200" name="y"/>
+      <item valueDataType="number" value="" name="anchorX"/>
+      <item valueDataType="number" value="" name="anchorY"/>
+      <item valueDataType="number" value="" name="width"/>
+      <item valueDataType="number" value="" name="height"/>
+      <item valueDataType="number" value="0" name="rotation"/>
+      <item valueDataType="number" value="1" name="alpha"/>
+      <item valueDataType="number" value="1000" name="duration"/>
+      <item valueDataType="string" value="%22backInOut%22" name="ease"/>
+      <item valueDataType="number" value="0" name="waitTime"/>
+      <item valueDataType="number" value="0" name="loop"/>
+      <item valueDataType="number" value="1" name="scaleX"/>
+      <item valueDataType="number" value="1" name="scaleY"/>
+    </item>
+  </item>
+  <item type="event" conditionRelationShip="true" triggerOnceWhileTrue="false">
+    <item type="condition" callTarget="instance" paramsClass="OnButtonBeginEvent" callName="onButtonBegin" isTrigger="true" target="BtnStart"/>
+    <item type="action" persistent="false" callTarget="instance" callName="gotoScene" target="System">
+      <item valueDataType="string" value="%22GameScene%22" name="18"/>
+    </item>
+  </item>
+</eventSheets>
